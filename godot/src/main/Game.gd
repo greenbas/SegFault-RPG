@@ -55,7 +55,7 @@ func _on_CombatArena_battle_completed(arena):
 	"""
 	At the end of an encounter, fade the screen, remove the combat arena
 	and add the local map back
-	"""
+	""" 
 	gui.show()
 	
 	transitioning = true

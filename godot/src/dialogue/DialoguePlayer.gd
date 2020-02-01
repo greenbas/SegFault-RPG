@@ -12,11 +12,14 @@ var expression : String
 var _conversation : Array
 var _index_current : int = 0
 
+onready var Gvars = get_node("/root/GlobalVars")
+
 func start(dialogue_dict):
 	"""
 	Takes a dictionary of conversation data returned by Dialogue.load()
 	and stores it in an array
 	"""
+	print(Gvars.GlobalVars['lorem'])
 	emit_signal("started")
 	_conversation = dialogue_dict.values()
 	_index_current = 0

@@ -105,6 +105,7 @@ layer = 100
 [node name="DialogueBox" parent="MapInterface" instance=ExtResource( 15 )]
 visible = false
 
+
 [editable path="GameBoard/Pawns/EncounterPawn"]
 
 [editable path="GameBoard/Pawns/DialoguePawn"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/main/Game.gd" type="Script" id=1]
 [ext_resource path="res://src/party/Party.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/audio/bgm/battle_theme.ogg" type="AudioStream" id=7]
 [ext_resource path="res://src/main/MusicPlayer.gd" type="Script" id=8]
 [ext_resource path="res://src/interface/debug/DebugInterface.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/dialogue/DialoguePlayer.gd" type="Script" id=10]
 
 [node name="Game" type="Node"]
 script = ExtResource( 1 )
@@ -25,7 +26,6 @@ visible = false
 [node name="TransitionColor" parent="Overlays" instance=ExtResource( 5 )]
 pause_mode = 2
 mouse_filter = 2
-transition = 0.0
 
 [node name="GameOverInterface" parent="." instance=ExtResource( 6 )]
 layer = 0
@@ -39,3 +39,7 @@ layer = 100
 
 [node name="DebugInterface" parent="Debug" instance=ExtResource( 9 )]
 visible = false
+
+[node name="DialoguePlayer" type="Node" parent="."]
+script = ExtResource( 10 )
+
