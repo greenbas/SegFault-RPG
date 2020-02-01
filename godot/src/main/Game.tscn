@@ -39,4 +39,3 @@ layer = 100
 
 [node name="DebugInterface" parent="Debug" instance=ExtResource( 9 )]
 visible = false
-

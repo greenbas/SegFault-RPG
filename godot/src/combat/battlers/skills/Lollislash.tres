@@ -11,4 +11,3 @@ icon = ExtResource( 1 )
 mana_cost = 3
 base_damage = 4
 success_chance = 1.0
-
