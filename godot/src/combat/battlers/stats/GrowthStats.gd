@@ -9,8 +9,10 @@ export var defense_curve : Curve
 export var speed_curve : Curve
 	
 func create_stats(experience : int) -> CharacterStats:
-	# Creates and returns a CharacterStats Resource with stats
-	# calculated based on the character's experience
+	"""
+	Creates and returns a CharacterStats Resource with stats
+	calculated based on the character's experience
+	"""
 	var stats : = CharacterStats.new()
 	stats.level = get_level(experience)
 	stats.max_health = _get_max_health(experience)
@@ -30,7 +32,9 @@ func get_level(value : int) -> int:
 	return level
 
 func _get_interpolated_level(value : int = 0) -> float:
-	# Calculate level, which updates all stats
+	"""
+	Calculate level, which updates all stats
+	"""
 	var max_level = len(level_lookup)
 	assert(max_level > 0)
 	var level : int = get_level(value)

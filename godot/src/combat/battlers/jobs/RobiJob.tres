@@ -33,3 +33,4 @@ max_mana_curve = SubResource( 3 )
 strength_curve = SubResource( 5 )
 defense_curve = SubResource( 1 )
 speed_curve = SubResource( 4 )
+

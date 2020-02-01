@@ -1,4 +1,6 @@
-# Pawn that can move on the GameBoard and play animations
+"""
+Pawn that can move on the GameBoard and play animations
+"""
 extends Pawn
 
 class_name PawnActor
@@ -39,7 +41,9 @@ func bump():
 	set_process(true)
 
 func change_skin(pawn_anim : PawnAnim):
-	# Replaces the pawn's animated character with another
+	"""
+	Replaces the pawn's animated character with another
+	"""
 	if anim:
 		anim.queue_free()
 	anim = pawn_anim

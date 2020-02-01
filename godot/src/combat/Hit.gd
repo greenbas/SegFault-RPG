@@ -1,4 +1,6 @@
-# Base object that represents an attack or a hit
+"""
+Base object that represents an attack or a hit
+"""
 
 class_name Hit
 

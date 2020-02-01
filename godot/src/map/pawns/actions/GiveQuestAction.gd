@@ -1,4 +1,6 @@
-# Starts a quest upon interacting with the InteractivePawn
+"""
+Starts a quest upon interacting with the InteractivePawn
+"""
 extends MapAction
 class_name GiveQuestAction
 
