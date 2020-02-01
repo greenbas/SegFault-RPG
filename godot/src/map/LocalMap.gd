@@ -26,3 +26,6 @@ func start_encounter(formation) -> void:
 func play_dialogue(data):
 	dialogue_box.start(data)
 	yield(dialogue_box, "dialogue_ended")
+
+#function update_tile():
+#	print("Updating tile!")

@@ -259,6 +259,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/combat/interface/bars/StatBar.gd"
 }, {
+"base": "MapAction",
+"class": "TileUpdateAction",
+"language": "GDScript",
+"path": "res://addons/Custom Actions/TileUpdateAction.gd"
+}, {
 "base": "YSort",
 "class": "TurnQueue",
 "language": "GDScript",
@@ -315,12 +320,13 @@ _global_script_class_icons={
 "SkillAction": "",
 "StartCombatAction": "",
 "StatBar": "",
+"TileUpdateAction": "",
 "TurnQueue": ""
 }
 
 [application]
 
-config/name="Godot Open RPG"
+config/name="SegFault-RPG"
 run/main_scene="res://src/main/Game.tscn"
 config/icon="res://icon.png"
 config/version="0.3.0"
