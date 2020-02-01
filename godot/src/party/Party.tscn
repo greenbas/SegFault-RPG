@@ -15,10 +15,6 @@
 [ext_resource path="res://src/combat/battlers/skills/Slash.tres" type="Resource" id=13]
 [ext_resource path="res://src/map/pawns/RobiPawnAnim.tscn" type="PackedScene" id=14]
 
-
-
-
-
 [node name="Party" type="Node2D"]
 script = ExtResource( 1 )
 

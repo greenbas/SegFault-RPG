@@ -22,6 +22,7 @@ func _ready():
 	local_map.spawn_party(party)
 	local_map.visible = true
 	local_map.connect("enemies_encountered", self, "enter_battle")
+	
 
 func enter_battle(formation: Formation):
 	"""
@@ -54,7 +55,7 @@ func _on_CombatArena_battle_completed(arena):
 	"""
 	At the end of an encounter, fade the screen, remove the combat arena
 	and add the local map back
-	"""
+	""" 
 	gui.show()
 	
 	transitioning = true
