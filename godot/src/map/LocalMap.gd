@@ -47,3 +47,7 @@ func enable_the_light():
 	$GameBoard/Pawns/Sparkle05.visible = true
 	$GameBoard/Pawns/Sparkle06.visible = true
 	$GameBoard/Pawns/Sparkle07.visible = true
+	$GameBoard/KoLeidoSprite.visible = true
+	$GameBoard/SunSprite.visible = true
+	$GameBoard/SundogSprite.visible = true
+	$GameBoard/RuinsSprite.visible = true
