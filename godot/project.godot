@@ -326,13 +326,14 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Godot Open RPG"
+config/name="SegFault-RPG"
 run/main_scene="res://src/main/Game.tscn"
 config/icon="res://icon.png"
 config/version="0.3.0"
 
 [autoload]
 
+SoundPlayer="*res://src/main/SoundPlayer.gd"
 DialogueDatabase="*res://src/dialogue/DialogueDatabase.gd"
 QuestSystem="*res://src/quest/QuestSystem.tscn"
 GlobalVars="*res://GlobalVars.gd"

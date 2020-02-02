@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://src/map/LocalMap.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/local_map/tilesets/cave.png" type="Texture" id=2]
@@ -369,8 +369,6 @@
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 80, 80 )
 
-[sub_resource type="RectangleShape2D" id=3]
-
 [node name="LocalMap" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -390,7 +388,7 @@ tile_data = PoolIntArray( -589807, -1610612735, 0, -589806, -1610612735, 0, -589
 script = ExtResource( 4 )
 
 [node name="SpawningPoint" parent="GameBoard" instance=ExtResource( 5 )]
-position = Vector2( 361.756, 361.858 )
+position = Vector2( 197.756, 599.858 )
 
 [node name="Pawns" type="YSort" parent="GameBoard"]
 script = ExtResource( 6 )
@@ -414,7 +412,7 @@ dialogue_file_path = "res://dialogue/data/test_conversation.json"
 
 [node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
 editor/display_folded = true
-position = Vector2( -590.547, 303.927 )
+position = Vector2( -466.547, -50.073 )
 facing = {
 "down": true,
 "left": true,
@@ -429,41 +427,24 @@ dialogue_file_path = "res://src/dialogue/data/test_conversation.json"
 formation = ExtResource( 11 )
 
 [node name="TestQuestGiver" parent="GameBoard/Pawns" instance=ExtResource( 12 )]
-position = Vector2( -601.302, 484.436 )
+position = Vector2( -585.302, 56.4365 )
 type = 0
 vanish_on_interaction = false
+AUTO_START_INTERACTION = false
 
 [node name="TestQuestReceiver" parent="GameBoard/Pawns" instance=ExtResource( 13 )]
-position = Vector2( -603.444, 583.536 )
+position = Vector2( -467.444, 59.5357 )
 type = 0
 vanish_on_interaction = false
+AUTO_START_INTERACTION = false
 
 [node name="EncounterPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
 editor/display_folded = true
-position = Vector2( -596, 402 )
+position = Vector2( -586, -56 )
 
 [node name="Sparkle01" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
-position = Vector2( -442, 838 )
-AUTO_START_INTERACTION = true
-
-[node name="Pivot" parent="GameBoard/Pawns/Sparkle01" index="0"]
 editor/display_folded = true
-
-[node name="QuestBubble" parent="GameBoard/Pawns/Sparkle01" index="1"]
-visible = false
-
-[node name="CollisionShape2D" parent="GameBoard/Pawns/Sparkle01" index="3"]
-shape = SubResource( 3 )
-
-[node name="Raycasts" parent="GameBoard/Pawns/Sparkle01" index="4"]
-editor/display_folded = true
-
-[node name="TileUpdate" parent="GameBoard/Pawns/Sparkle01/Actions" index="0" instance_placeholder="res://src/map/pawns/actions/StartCombatAction.tscn"]
-script = ExtResource( 14 )
-
-[node name="Sparkle02" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
-position = Vector2( -40, 364 )
-AUTO_START_INTERACTION = true
+position = Vector2( -442, 844 )
 facing = {
 "down": true,
 "left": true,
@@ -471,14 +452,28 @@ facing = {
 "up": true
 }
 
+[node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle01/Actions" index="0"]
+script = ExtResource( 14 )
+
+[node name="Sparkle02" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
+editor/display_folded = true
+position = Vector2( -38, 358 )
+facing = {
+"down": true,
+"left": true,
+"right": true,
+"up": true
+}
+
+[node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle02/Actions" index="0"]
+script = ExtResource( 14 )
+
 [node name="MapInterface" type="CanvasLayer" parent="."]
 pause_mode = 2
 layer = 100
 
 [node name="DialogueBox" parent="MapInterface" instance=ExtResource( 15 )]
 visible = false
-[connection signal="input_event" from="GameBoard/Pawns/Sparkle01" to="." method="_on_Sparkle01_input_event"]
-[connection signal="input_event" from="GameBoard/Pawns/Sparkle02" to="." method="_on_Sparkle01_input_event"]
 
 [editable path="GameBoard/Pawns/DialoguePawn"]
 
@@ -487,3 +482,5 @@ visible = false
 [editable path="GameBoard/Pawns/EncounterPawn"]
 
 [editable path="GameBoard/Pawns/Sparkle01"]
+
+[editable path="GameBoard/Pawns/Sparkle02"]

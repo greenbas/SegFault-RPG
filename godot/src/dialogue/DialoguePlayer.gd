@@ -14,6 +14,10 @@ var _index_current : int = 0
 
 onready var gVarsNode = get_node("/root/GlobalVars")
 onready var Gvars = gVarsNode.GlobalVars
+onready var sfxPlayer = get_node("/root/SoundPlayer")
+
+func _ready(): 
+	sfxPlayer.pause_mode = Node.PAUSE_MODE_PROCESS
 
 func start(dialogue_dict):
 	"""
@@ -27,12 +31,22 @@ func start(dialogue_dict):
 	_update()
 
 func next():
+	
 	_index_current += 1
 	if _conversation[_index_current].has("type"):
+		var arg_1
+		var arg_2
+		var arg_3
 		var type = _conversation[_index_current].type
-		var arg_1 = _conversation[_index_current].name
-		var arg_2 = _conversation[_index_current].expression
-		var arg_3 = _conversation[_index_current].text
+		arg_1 = _conversation[_index_current].name
+		if _conversation[_index_current].has("expression"):
+			arg_2 = _conversation[_index_current].expression
+		else:
+			 arg_2 = ''
+		if _conversation[_index_current].has('text'):
+			arg_3 = _conversation[_index_current].text or ''
+		else: 
+			arg_3 = ''
 		if type == 'jump':
 			_index_current = int(arg_1) - 1
 		if type == 'itemcheck':
@@ -52,6 +66,9 @@ func next():
 	_update()
 
 func _update():
+	if _conversation[_index_current].has("sfx") == true:
+		var sfxID = _conversation[_index_current].sfx
+		sfxPlayer.diaMCspeech()
 	text = _conversation[_index_current].text
 	title = _conversation[_index_current].name
 	expression = _conversation[_index_current].expression
