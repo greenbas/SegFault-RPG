@@ -1,9 +1,10 @@
 {
-    "001" : {"name":"Godette", "expression": "neutral", "text":"You found something." },
+    "001" : {"sfx":"MCspeech","name":"Godette", "expression": "neutral", "text":"You found something." },
     "002" : {"name":"Robi", "expression": "neutral", "text":"I don't know what that is, but at least it's something!" },
 	"003" : {"name":"Robi", "expression": "neutral", "text":"Wait.. what's happening"},
-	"004" : {"name":"Godette", "expression": "neutral","text":"What are you talking about? nothing's happening","type":"jump","to":007},
-	"005" : {"name":"Robi", "expression": "neutral", "text": "huh, I guess you're right"},
-	"006" : {"name":"Robi", "expression": "neutral", "text": "..."},
-	"007" : {"name":"Godette", "expression": "neutral","text":"*hiccup*"},
+	"004" : {"name":"Godette", "expression": "neutral","text":"What are you talking about? nothing's happening"},
+	"005" : {"type":"jump","name":"007"},
+	"006" : {"name":"Robi", "expression": "neutral", "text": "huh, I guess you're right"},
+	"007" : {"name":"Robi", "expression": "neutral", "text": "..."},
+	"009" : {"name":"Godette", "expression": "neutral","text":"*hiccup*"},	
 }

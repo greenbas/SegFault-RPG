@@ -6,6 +6,17 @@ const MCques = preload("res://assets/audio/sound/dialog/mc_ques.ogg")
 const MCsad = preload("res://assets/audio/sound/dialog/mc_sad.ogg")
 const MCexclaim = preload("res://assets/audio/sound/dialog/mc_exclaim.ogg")
 
+var soundDict = {
+  'MCspeech': MCspeech,
+  'MCques': MCques,
+  'MCsad': MCsad,
+  'MCexclaim': MCexclaim
+}
+
+func playSFX(index):
+	stream = soundDict[index]
+	play()
+
 func diaMCspeech():
 	stream = MCspeech
 	play()

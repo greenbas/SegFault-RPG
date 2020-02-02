@@ -333,10 +333,10 @@ config/version="0.3.0"
 
 [autoload]
 
+SoundPlayer="*res://src/main/SoundPlayer.gd"
 DialogueDatabase="*res://src/dialogue/DialogueDatabase.gd"
 QuestSystem="*res://src/quest/QuestSystem.tscn"
 GlobalVars="*res://GlobalVars.gd"
-SoundPlayer="*res://src/main/SoundPlayer.gd"
 
 [debug]
 

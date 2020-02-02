@@ -142,14 +142,13 @@ tile_data = PoolIntArray( -589807, -1610612735, 0, -589806, -1610612735, 0, -589
 script = ExtResource( 4 )
 
 [node name="SpawningPoint" parent="GameBoard" instance=ExtResource( 5 )]
-position = Vector2( -200.244, 595.858 )
+position = Vector2( 356.113, 449.448 )
 
 [node name="Pawns" type="YSort" parent="GameBoard"]
 script = ExtResource( 6 )
 party_scene = ExtResource( 7 )
 
 [node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
-editor/display_folded = true
 position = Vector2( 145.039, 450.51 )
 facing = {
 "down": false,
@@ -161,8 +160,11 @@ facing = {
 [node name="CollisionShape2D" parent="GameBoard/Pawns/DialoguePawn" index="3"]
 shape = SubResource( 2 )
 
+[node name="Raycasts" parent="GameBoard/Pawns/DialoguePawn" index="4"]
+editor/display_folded = true
+
 [node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 9 )]
-dialogue_file_path = "res://dialogue/data/test_conversation.json"
+dialogue_file_path = "res://src/dialogue/data/test_conversation.json"
 
 [node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
 editor/display_folded = true
@@ -201,6 +203,7 @@ layer = 100
 
 [node name="DialogueBox" parent="MapInterface" instance=ExtResource( 15 )]
 visible = false
+
 
 [editable path="GameBoard/Pawns/DialoguePawn"]
 
