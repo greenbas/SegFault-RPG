@@ -4,7 +4,6 @@
 [ext_resource path="res://assets/tilesets/grid/obstacle.png" type="Texture" id=2]
 [ext_resource path="res://assets/tilesets/grid/object.png" type="Texture" id=3]
 
-
 [node name="Node2D" type="Node2D"]
 
 [node name="Actor" type="Sprite" parent="."]
@@ -18,4 +17,3 @@ texture = ExtResource( 2 )
 [node name="Object" type="Sprite" parent="."]
 position = Vector2( 160, 32 )
 texture = ExtResource( 3 )
-
