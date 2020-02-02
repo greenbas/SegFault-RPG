@@ -8,4 +8,3 @@ name = "Potion"
 description = "Recovers health"
 unique = false
 sell_value = 0
-
