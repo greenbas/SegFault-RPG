@@ -12,6 +12,7 @@ enum CELL_TYPES { EMPTY = -1, ACTOR, OBSTACLE, OBJECT }
 var pathfinder : Pathfinder = Pathfinder.new()
 onready var pawns : YSort = $Pawns
 onready var spawning_point = $SpawningPoint
+onready var GlobalVars = get_node("/root/GlobalVars")
 
 func _ready():
 	for pawn in pawns.get_children():
@@ -60,8 +61,11 @@ func update_pawn_position(pawn : PawnActor, cell_start : Vector2, cell_target : 
 func calculate_world_pos(grid_pos : Vector2) -> Vector2:
 	return map_to_world(grid_pos) - cell_size / 2
 
-func update_tile(x, y, newt):
-	$Sprite.visible = true
+var sparkle01 = false
+func update_tile(num):
+	#$Pawns/Sparkle01.visible = false
+	GlobalVars.GlobalVars["sparkle0%s" % num] = true
+	print("Got sparkle0%s" % num)
 	#var t_id : Vector2 = Vector2(-6, 5)
 	#var new_tile = pawns.get_children()[1].type
 	#print("Tile type = %s" % get_cellv(t_id))

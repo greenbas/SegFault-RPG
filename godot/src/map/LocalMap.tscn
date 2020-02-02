@@ -1,21 +1,20 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/map/LocalMap.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/local_map/tilesets/cave.png" type="Texture" id=2]
 [ext_resource path="res://assets/tilesets/grid/grid_tileset.tres" type="TileSet" id=3]
 [ext_resource path="res://src/map/grid/GameBoard.gd" type="Script" id=4]
-[ext_resource path="res://assets/tilesets/grid/object.png" type="Texture" id=5]
-[ext_resource path="res://src/map/grid/SpawningPoint.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/map/grid/PawnContainer.gd" type="Script" id=7]
-[ext_resource path="res://src/party/Party.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/map/pawns/PawnInteractive.tscn" type="PackedScene" id=9]
-[ext_resource path="res://src/map/pawns/actions/DialogueAction.tscn" type="PackedScene" id=10]
-[ext_resource path="res://src/map/pawns/actions/StartCombatAction.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/combat/battlers/formations/PorcupineFormation001.tscn" type="PackedScene" id=12]
-[ext_resource path="res://src/map/pawns/TestQuestGiver.tscn" type="PackedScene" id=13]
-[ext_resource path="res://src/map/pawns/TestQuestReceiver.tscn" type="PackedScene" id=14]
-[ext_resource path="res://addons/Custom Actions/TileUpdateAction.gd" type="Script" id=15]
-[ext_resource path="res://src/interface/gui/DialogueBox.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/map/grid/SpawningPoint.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/map/grid/PawnContainer.gd" type="Script" id=6]
+[ext_resource path="res://src/party/Party.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/map/pawns/PawnInteractive.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/map/pawns/actions/DialogueAction.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/map/pawns/actions/StartCombatAction.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/combat/battlers/formations/PorcupineFormation001.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/map/pawns/TestQuestGiver.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/map/pawns/TestQuestReceiver.tscn" type="PackedScene" id=13]
+[ext_resource path="res://addons/Custom Actions/TileUpdateAction.gd" type="Script" id=14]
+[ext_resource path="res://src/interface/gui/DialogueBox.tscn" type="PackedScene" id=15]
 
 [sub_resource type="TileSet" id=1]
 0/name = "cave.png 0"
@@ -371,7 +370,6 @@
 extents = Vector2( 80, 80 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 50, 50 )
 
 [node name="LocalMap" type="Node2D"]
 script = ExtResource( 1 )
@@ -388,22 +386,17 @@ tile_data = PoolIntArray( -524296, 8, 0, -524295, 536870920, 0, -524294, 8, 0, -
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 80, 80 )
 format = 1
-tile_data = PoolIntArray( -589807, -1610612735, 0, -589806, -1610612735, 0, -589805, -1610612735, 0, -589804, -1610612735, 0, -524272, -1610612735, 0, -524271, -1610612735, 0, -524268, -1610612735, 0, -458737, -1610612735, 0, -458736, -1610612735, 0, -458733, -1610612735, 0, -458732, -1610612735, 0, -393201, -1610612735, 0, -393198, -1610612735, 0, -393197, -1610612735, 0, -327665, -1610612735, 0, -327661, -1610612735, 0, -196609, 1, 0, -262144, 1, 0, -262143, 1, 0, -262129, -1610612735, 0, -262128, -1610612735, 0, -262127, -1610612735, 0, -262125, -1610612735, 0, -262124, -1610612735, 0, -131073, 1, 0, -196607, 1, 0, -196606, 1, 0, -196605, 1, 0, -196604, 1, 0, -196603, 1, 0, -196598, -1610612735, 0, -196597, -1610612735, 0, -196596, -1610612735, 0, -196595, -1610612735, 0, -196594, -1610612735, 0, -196593, -1610612735, 0, -196588, -1610612735, 0, -196587, -1610612735, 0, -65537, 1, 0, -131067, 1, 0, -131065, -1610612735, 0, -131064, -1610612735, 0, -131063, -1610612735, 0, -131062, -1610612735, 0, -131059, -1610612735, 0, -131058, -1610612735, 0, -131055, -1610612735, 0, -131054, -1610612735, 0, -131051, -1610612735, 0, -131049, -1610612735, 0, -131048, -1610612735, 0, -131047, -1610612735, 0, -3, 1, 0, -2, 1, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65531, 1, 0, -65529, -1610612735, 0, -65523, -1610612735, 0, -65522, -1610612735, 0, -65519, -1610612735, 0, -65518, -1610612735, 0, -65517, -1610612735, 0, -65516, -1610612735, 0, -65515, -1610612735, 0, -65513, -1610612735, 0, -65511, -1610612735, 0, -65510, -1610612735, 0, -65509, -1610612735, 0, 65532, 1, 0, 65533, 1, 0, 65535, 1, 0, 0, 1, 0, 3, 1, 0, 5, 1, 0, 6, -1610612735, 0, 7, -1610612735, 0, 9, -1610612735, 0, 10, -1610612735, 0, 11, -1610612735, 0, 16, -1610612735, 0, 17, -1610612735, 0, 23, -1610612735, 0, 27, -1610612735, 0, 131068, 1, 0, 65536, 1, 0, 65539, 1, 0, 65542, 1, 0, 65543, -1610612735, 0, 65545, -1610612735, 0, 65546, -1610612735, 0, 65549, -1610612735, 0, 65550, -1610612735, 0, 65551, -1610612735, 0, 65552, -1610612735, 0, 65559, -1610612735, 0, 65560, -1610612735, 0, 65561, -1610612735, 0, 65563, -1610612735, 0, 65564, -1610612735, 0, 196603, 1, 0, 196604, 1, 0, 196606, 1, 0, 131072, 1, 0, 131075, 1, 0, 131076, 1, 0, 131078, 1, 0, 131079, -1610612735, 0, 131080, -1610612735, 0, 131081, -1610612735, 0, 131082, -1610612735, 0, 131084, -1610612735, 0, 131085, -1610612735, 0, 131097, -1610612735, 0, 131100, -1610612735, 0, 262138, 1, 0, 262139, 1, 0, 262142, 1, 0, 196608, 1, 0, 196611, 1, 0, 196612, 1, 0, 196614, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 1, 0, 196621, -1610612735, 0, 196633, -1610612735, 0, 196634, -1610612735, 0, 196636, -1610612735, 0, 327673, 1, 0, 327674, 1, 0, 327677, 1, 0, 327678, 1, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262150, 1, 0, 262152, 1, 0, 262157, -1610612735, 0, 262170, -1610612735, 0, 262172, -1610612735, 0, 262173, -1610612735, 0, 393209, 1, 0, 393212, 1, 0, 393213, 1, 0, 393214, 1, 0, 393215, 1, 0, 327680, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327691, 1, 0, 327692, 1, 0, 327693, -1610612735, 0, 327706, -1610612735, 0, 327709, -1610612735, 0, 458744, 1, 0, 458745, 1, 0, 458746, 1, 0, 458750, 1, 0, 458751, 1, 0, 393219, 1, 0, 393223, 1, 0, 393224, 1, 0, 393227, 1, 0, 393228, 1, 0, 393229, 1, 0, 393242, -1610612735, 0, 393243, -1610612735, 0, 393245, -1610612735, 0, 524280, 1, 0, 524286, 1, 0, 524287, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458759, 1, 0, 458760, 1, 0, 458765, 1, 0, 458778, -1610612735, 0, 458779, -1610612735, 0, 458781, -1610612735, 0, 589816, 1, 0, 589818, 1, 0, 589819, 1, 0, 589820, 1, 0, 524289, 1, 0, 524290, 1, 0, 524293, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524301, 1, 0, 524314, -1610612735, 0, 524317, -1610612735, 0, 655352, 1, 0, 655354, 1, 0, 655355, 1, 0, 655356, 1, 0, 655357, 1, 0, 655358, 1, 0, 655359, 1, 0, 589824, 1, 0, 589825, 1, 0, 589829, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589837, 1, 0, 589840, -1610612735, 0, 589841, -1610612735, 0, 589842, -1610612735, 0, 589843, -1610612735, 0, 589845, -1610612735, 0, 589846, -1610612735, 0, 589847, -1610612735, 0, 589848, -1610612735, 0, 589849, -1610612735, 0, 589850, -1610612735, 0, 589852, -1610612735, 0, 589853, -1610612735, 0, 720888, 1, 0, 720891, 1, 0, 655365, 1, 0, 655366, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655373, 1, 0, 655376, -1610612735, 0, 655379, -1610612735, 0, 655380, -1610612735, 0, 655381, -1610612735, 0, 655388, -1610612735, 0, 786424, 1, 0, 786425, 1, 0, 786426, 1, 0, 786427, 1, 0, 720902, 1, 0, 720906, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 720912, 1, 0, 720914, -1610612735, 0, 720915, -1610612735, 0, 720916, -1610612735, 0, 720919, -1610612735, 0, 720920, -1610612735, 0, 720921, -1610612735, 0, 720922, -1610612735, 0, 720923, -1610612735, 0, 720924, -1610612735, 0, 786438, 1, 0, 786439, 1, 0, 786454, -1610612735, 0, 786455, -1610612735, 0, 851974, 1, 0, 851975, 1, 0, 851979, 1, 0, 851980, 1, 0, 851981, 1, 0, 851984, 1, 0, 851985, 1, 0, 851986, 1, 0, 851987, -1610612735, 0, 851988, -1610612735, 0, 851989, -1610612735, 0, 851990, -1610612735, 0, 917508, 1, 0, 917509, 1, 0, 917510, 1, 0, 917514, 1, 0, 917515, 1, 0, 917517, 1, 0, 917521, 1, 0, 983044, 1, 0, 983048, 1, 0, 983051, 1, 0, 983052, 1, 0, 983053, 1, 0, 983054, 1, 0, 983057, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114125, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, -1610612735, 0, 1114130, -1610612735, 0, 1114131, -1610612735, 0, 1179656, 1, 0, 1179661, 1, 0, 1179663, 1, 0, 1179664, 1, 0, 1179667, 1, 0, 1245192, 1, 0, 1245193, 1, 0, 1245194, 1, 0, 1245196, 1, 0, 1245197, 1, 0, 1245202, 1, 0, 1245203, 1, 0, 1310730, 1, 0, 1310731, 1, 0, 1310732, 1, 0, 1310733, 1, 0, 1310734, 1, 0, 1310735, 1, 0, 1310736, 1, 0, 1310737, 1, 0, 1310738, 1, 0 )
+tile_data = PoolIntArray( -589807, -1610612735, 0, -589806, -1610612735, 0, -589805, -1610612735, 0, -589804, -1610612735, 0, -524272, -1610612735, 0, -524271, -1610612735, 0, -524268, -1610612735, 0, -458737, -1610612735, 0, -458736, -1610612735, 0, -458733, -1610612735, 0, -458732, -1610612735, 0, -393201, -1610612735, 0, -393198, -1610612735, 0, -393197, -1610612735, 0, -327665, -1610612735, 0, -327661, -1610612735, 0, -196609, 1, 0, -262144, 1, 0, -262143, 1, 0, -262129, -1610612735, 0, -262128, -1610612735, 0, -262127, -1610612735, 0, -262125, -1610612735, 0, -262124, -1610612735, 0, -131073, 1, 0, -196607, 1, 0, -196606, 1, 0, -196605, 1, 0, -196604, 1, 0, -196603, 1, 0, -196598, -1610612735, 0, -196597, -1610612735, 0, -196596, -1610612735, 0, -196595, -1610612735, 0, -196594, -1610612735, 0, -196593, -1610612735, 0, -196588, -1610612735, 0, -196587, -1610612735, 0, -65537, 1, 0, -131067, 1, 0, -131065, -1610612735, 0, -131064, -1610612735, 0, -131063, -1610612735, 0, -131062, -1610612735, 0, -131059, -1610612735, 0, -131058, -1610612735, 0, -131055, -1610612735, 0, -131054, -1610612735, 0, -131051, -1610612735, 0, -131049, -1610612735, 0, -131048, -1610612735, 0, -131047, -1610612735, 0, -3, 1, 0, -2, 1, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65531, 1, 0, -65529, -1610612735, 0, -65523, -1610612735, 0, -65522, -1610612735, 0, -65519, -1610612735, 0, -65518, -1610612735, 0, -65517, -1610612735, 0, -65516, -1610612735, 0, -65515, -1610612735, 0, -65513, -1610612735, 0, -65511, -1610612735, 0, -65510, -1610612735, 0, -65509, -1610612735, 0, 65532, 1, 0, 65533, 1, 0, 65535, 1, 0, 0, 1, 0, 3, 1, 0, 5, 1, 0, 6, -1610612735, 0, 7, -1610612735, 0, 9, -1610612735, 0, 10, -1610612735, 0, 11, -1610612735, 0, 16, -1610612735, 0, 17, -1610612735, 0, 23, -1610612735, 0, 27, -1610612735, 0, 131068, 1, 0, 65536, 1, 0, 65539, 1, 0, 65542, 1, 0, 65543, -1610612735, 0, 65545, -1610612735, 0, 65546, -1610612735, 0, 65549, -1610612735, 0, 65550, -1610612735, 0, 65551, -1610612735, 0, 65552, -1610612735, 0, 65559, -1610612735, 0, 65560, -1610612735, 0, 65561, -1610612735, 0, 65563, -1610612735, 0, 65564, -1610612735, 0, 196603, 1, 0, 196604, 1, 0, 196606, 1, 0, 131072, 1, 0, 131075, 1, 0, 131076, 1, 0, 131078, 1, 0, 131079, -1610612735, 0, 131080, -1610612735, 0, 131081, -1610612735, 0, 131082, -1610612735, 0, 131084, -1610612735, 0, 131085, -1610612735, 0, 131097, -1610612735, 0, 131100, -1610612735, 0, 262138, 1, 0, 262139, 1, 0, 262142, 1, 0, 196608, 1, 0, 196611, 1, 0, 196612, 1, 0, 196614, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 1, 0, 196621, -1610612735, 0, 196633, -1610612735, 0, 196634, -1610612735, 0, 196636, -1610612735, 0, 327673, 1, 0, 327674, 1, 0, 327677, 1, 0, 327678, 1, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262150, 1, 0, 262152, 1, 0, 262157, -1610612735, 0, 262170, -1610612735, 0, 262172, -1610612735, 0, 262173, -1610612735, 0, 393209, 1, 0, 393212, 1, 0, 393213, 1, 0, 393214, 1, 0, 393215, 1, 0, 327680, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327691, 1, 0, 327692, 1, 0, 327693, -1610612735, 0, 327706, -1610612735, 0, 327709, -1610612735, 0, 458744, 1, 0, 458745, 1, 0, 458746, 1, 0, 458750, 1, 0, 458751, 1, 0, 393219, 1, 0, 393223, 1, 0, 393224, 1, 0, 393227, 1, 0, 393228, 1, 0, 393229, 1, 0, 393242, -1610612735, 0, 393243, -1610612735, 0, 393245, -1610612735, 0, 524280, 1, 0, 524286, 1, 0, 524287, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458759, 1, 0, 458760, 1, 0, 458765, 1, 0, 458778, -1610612735, 0, 458779, -1610612735, 0, 458781, -1610612735, 0, 589816, 1, 0, 589818, 1, 0, 589819, 1, 0, 589820, 1, 0, 524289, 1, 0, 524290, 1, 0, 524293, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524301, 1, 0, 524314, -1610612735, 0, 524317, -1610612735, 0, 655352, 1, 0, 655354, 1, 0, 655355, 1, 0, 655356, 1, 0, 655357, 1, 0, 655358, 1, 0, 655359, 1, 0, 589824, 1, 0, 589825, 1, 0, 589829, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589837, 1, 0, 589840, -1610612735, 0, 589841, -1610612735, 0, 589842, -1610612735, 0, 589843, -1610612735, 0, 589845, -1610612735, 0, 589846, -1610612735, 0, 589847, -1610612735, 0, 589848, -1610612735, 0, 589849, -1610612735, 0, 589850, -1610612735, 0, 589852, -1610612735, 0, 589853, -1610612735, 0, 720888, 1, 0, 720891, 1, 0, 655365, 1, 0, 655366, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655373, 1, 0, 655376, -1610612735, 0, 655379, -1610612735, 0, 655380, -1610612735, 0, 655381, -1610612735, 0, 655388, -1610612735, 0, 786424, 1, 0, 786425, 1, 0, 786426, 1, 0, 786427, 1, 0, 720902, 1, 0, 720906, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 720912, 1, 0, 720914, -1610612735, 0, 720915, -1610612735, 0, 720916, -1610612735, 0, 720919, -1610612735, 0, 720920, -1610612735, 0, 720921, -1610612735, 0, 720922, -1610612735, 0, 720923, -1610612735, 0, 720924, -1610612735, 0, 786438, 1, 0, 786439, 1, 0, 786454, -1610612735, 0, 786455, -1610612735, 0, 851974, 1, 0, 851975, 1, 0, 851979, 1, 0, 851980, 1, 0, 851981, 1, 0, 851984, 1, 0, 851985, 1, 0, 851986, 1, 0, 851987, -1610612735, 0, 851988, -1610612735, 0, 851989, -1610612735, 0, 851990, -1610612735, 0, 917508, 1, 0, 917509, 1, 0, 917510, 1, 0, 917514, 1, 0, 917515, 1, 0, 917517, 1, 0, 917521, 1, 0, 983044, 1, 0, 983048, 1, 0, 983051, 1, 0, 983052, 1, 0, 983053, 1, 0, 983054, 1, 0, 983057, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114125, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, -1610612735, 0, 1114130, -1610612735, 0, 1114131, -1610612735, 0, 1179656, 1, 0, 1179661, 1, 0, 1179663, 1, 0, 1179664, 1, 0, 1179667, 1, 0, 1245192, 1, 0, 1245193, 1, 0, 1245194, 1, 0, 1245196, 1, 0, 1245197, 1, 0, 1245202, 1, 0, 1245203, 1, 0, 1310730, 1, 0, 1310731, 1, 0, 1310732, 1, 0, 1310733, 1, 0, 1310734, 1, 0, 1310735, 1, 0, 1310736, 1, 0, 1310737, 1, 0, 1310738, 1, 0 )
 script = ExtResource( 4 )
 
-[node name="Sprite" type="Sprite" parent="GameBoard"]
-visible = false
-position = Vector2( -431, 447 )
-texture = ExtResource( 5 )
-
-[node name="SpawningPoint" parent="GameBoard" instance=ExtResource( 6 )]
+[node name="SpawningPoint" parent="GameBoard" instance=ExtResource( 5 )]
 position = Vector2( 361.756, 361.858 )
 
 [node name="Pawns" type="YSort" parent="GameBoard"]
-script = ExtResource( 7 )
-party_scene = ExtResource( 8 )
+script = ExtResource( 6 )
+party_scene = ExtResource( 7 )
 
-[node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 9 )]
+[node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
 editor/display_folded = true
 position = Vector2( 145.039, 450.51 )
 facing = {
@@ -416,12 +409,12 @@ facing = {
 [node name="CollisionShape2D" parent="GameBoard/Pawns/DialoguePawn" index="3"]
 shape = SubResource( 2 )
 
-[node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 10 )]
+[node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 9 )]
 dialogue_file_path = "res://dialogue/data/test_conversation.json"
 
-[node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 9 )]
+[node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
 editor/display_folded = true
-position = Vector2( -446.547, 353.927 )
+position = Vector2( -590.547, 303.927 )
 facing = {
 "down": true,
 "left": true,
@@ -429,29 +422,48 @@ facing = {
 "up": true
 }
 
-[node name="Dialogue" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="0" instance=ExtResource( 10 )]
+[node name="Dialogue" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="0" instance=ExtResource( 9 )]
 dialogue_file_path = "res://src/dialogue/data/test_conversation.json"
 
-[node name="StartCombat" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="1" instance=ExtResource( 11 )]
-formation = ExtResource( 12 )
+[node name="StartCombat" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="1" instance=ExtResource( 10 )]
+formation = ExtResource( 11 )
 
-[node name="TestQuestGiver" parent="GameBoard/Pawns" instance=ExtResource( 13 )]
-position = Vector2( -203.302, 44.4365 )
+[node name="TestQuestGiver" parent="GameBoard/Pawns" instance=ExtResource( 12 )]
+position = Vector2( -601.302, 484.436 )
+type = 0
+vanish_on_interaction = false
 
-[node name="TestQuestReceiver" parent="GameBoard/Pawns" instance=ExtResource( 14 )]
-position = Vector2( -47.4442, 41.5357 )
+[node name="TestQuestReceiver" parent="GameBoard/Pawns" instance=ExtResource( 13 )]
+position = Vector2( -603.444, 583.536 )
+type = 0
+vanish_on_interaction = false
 
-[node name="EncounterPawn" parent="GameBoard/Pawns" instance=ExtResource( 9 )]
-position = Vector2( 38, 510 )
+[node name="EncounterPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
+editor/display_folded = true
+position = Vector2( -596, 402 )
 
-[node name="CollisionShape2D" parent="GameBoard/Pawns/EncounterPawn" index="3"]
+[node name="Sparkle01" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
+position = Vector2( -442, 838 )
+AUTO_START_INTERACTION = true
+
+[node name="Pivot" parent="GameBoard/Pawns/Sparkle01" index="0"]
+editor/display_folded = true
+
+[node name="QuestBubble" parent="GameBoard/Pawns/Sparkle01" index="1"]
+visible = false
+
+[node name="CollisionShape2D" parent="GameBoard/Pawns/Sparkle01" index="3"]
 shape = SubResource( 3 )
 
-[node name="TileUpdate" parent="GameBoard/Pawns/EncounterPawn/Actions" index="0" instance_placeholder="res://src/map/pawns/actions/StartCombatAction.tscn"]
-script = ExtResource( 15 )
+[node name="Raycasts" parent="GameBoard/Pawns/Sparkle01" index="4"]
+editor/display_folded = true
 
-[node name="Sparkle01" parent="GameBoard/Pawns" instance=ExtResource( 9 )]
-position = Vector2( 38, 510 )
+[node name="TileUpdate" parent="GameBoard/Pawns/Sparkle01/Actions" index="0" instance_placeholder="res://src/map/pawns/actions/StartCombatAction.tscn"]
+script = ExtResource( 14 )
+
+[node name="Sparkle02" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
+position = Vector2( -40, 364 )
+AUTO_START_INTERACTION = true
 facing = {
 "down": true,
 "left": true,
@@ -463,11 +475,15 @@ facing = {
 pause_mode = 2
 layer = 100
 
-[node name="DialogueBox" parent="MapInterface" instance=ExtResource( 16 )]
+[node name="DialogueBox" parent="MapInterface" instance=ExtResource( 15 )]
 visible = false
+[connection signal="input_event" from="GameBoard/Pawns/Sparkle01" to="." method="_on_Sparkle01_input_event"]
+[connection signal="input_event" from="GameBoard/Pawns/Sparkle02" to="." method="_on_Sparkle01_input_event"]
 
 [editable path="GameBoard/Pawns/DialoguePawn"]
 
 [editable path="GameBoard/Pawns/DialogueCombatPawn"]
 
 [editable path="GameBoard/Pawns/EncounterPawn"]
+
+[editable path="GameBoard/Pawns/Sparkle01"]
