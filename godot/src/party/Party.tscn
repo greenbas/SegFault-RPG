@@ -56,7 +56,6 @@ script = ExtResource( 8 )
 
 [node name="RobiPawnAnim" parent="Robi" instance=ExtResource( 14 )]
 
-
 [editable path="Godette"]
 
 [editable path="Godette/Battler"]
