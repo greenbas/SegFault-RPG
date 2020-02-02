@@ -59,3 +59,8 @@ func update_pawn_position(pawn : PawnActor, cell_start : Vector2, cell_target : 
 
 func calculate_world_pos(grid_pos : Vector2) -> Vector2:
 	return map_to_world(grid_pos) - cell_size / 2
+
+func update_tile(x, y, newt):
+	var t_id : Vector2 = Vector2(-6, 5)
+	var new_tile = pawns.get_children()[0].type
+	set_cellv(t_id, new_tile)

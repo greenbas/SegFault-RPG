@@ -8,12 +8,12 @@
 [ext_resource path="res://src/map/grid/PawnContainer.gd" type="Script" id=6]
 [ext_resource path="res://src/party/Party.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/map/pawns/PawnInteractive.tscn" type="PackedScene" id=8]
-[ext_resource path="res://addons/Custom Actions/TileUpdateAction.gd" type="Script" id=9]
-[ext_resource path="res://src/map/pawns/actions/DialogueAction.tscn" type="PackedScene" id=10]
-[ext_resource path="res://src/map/pawns/actions/StartCombatAction.tscn" type="PackedScene" id=11]
-[ext_resource path="res://src/combat/battlers/formations/PorcupineFormation001.tscn" type="PackedScene" id=12]
-[ext_resource path="res://src/map/pawns/TestQuestGiver.tscn" type="PackedScene" id=13]
-[ext_resource path="res://src/map/pawns/TestQuestReceiver.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/map/pawns/actions/DialogueAction.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/map/pawns/actions/StartCombatAction.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/combat/battlers/formations/PorcupineFormation001.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/map/pawns/TestQuestGiver.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/map/pawns/TestQuestReceiver.tscn" type="PackedScene" id=13]
+[ext_resource path="res://addons/Custom Actions/TileUpdateAction.gd" type="Script" id=14]
 [ext_resource path="res://src/interface/gui/DialogueBox.tscn" type="PackedScene" id=15]
 
 [sub_resource type="TileSet" id=1]
@@ -118,10 +118,10 @@
 8/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 50, 50 )
+extents = Vector2( 80, 80 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 80, 80 )
+extents = Vector2( 50, 50 )
 
 [node name="LocalMap" type="Node2D"]
 script = ExtResource( 1 )
@@ -148,22 +148,8 @@ position = Vector2( -200.244, 595.858 )
 script = ExtResource( 6 )
 party_scene = ExtResource( 7 )
 
-[node name="EncounterPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
-position = Vector2( 121.802, 690.51 )
-facing = {
-"down": false,
-"left": false,
-"right": false,
-"up": false
-}
-
-[node name="CollisionShape2D" parent="GameBoard/Pawns/EncounterPawn" index="3"]
-shape = SubResource( 2 )
-
-[node name="StartCombat" parent="GameBoard/Pawns/EncounterPawn/Actions" index="0" instance_placeholder="res://src/map/pawns/actions/StartCombatAction.tscn"]
-script = ExtResource( 9 )
-
 [node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
+editor/display_folded = true
 position = Vector2( 145.039, 450.51 )
 facing = {
 "down": false,
@@ -173,12 +159,13 @@ facing = {
 }
 
 [node name="CollisionShape2D" parent="GameBoard/Pawns/DialoguePawn" index="3"]
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
-[node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 10 )]
+[node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 9 )]
 dialogue_file_path = "res://dialogue/data/test_conversation.json"
 
 [node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
+editor/display_folded = true
 position = Vector2( -446.547, 353.927 )
 facing = {
 "down": true,
@@ -187,17 +174,26 @@ facing = {
 "up": true
 }
 
-[node name="Dialogue" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="0" instance=ExtResource( 10 )]
+[node name="Dialogue" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="0" instance=ExtResource( 9 )]
 dialogue_file_path = "res://src/dialogue/data/test_conversation.json"
 
-[node name="StartCombat" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="1" instance=ExtResource( 11 )]
-formation = ExtResource( 12 )
+[node name="StartCombat" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="1" instance=ExtResource( 10 )]
+formation = ExtResource( 11 )
 
-[node name="TestQuestGiver" parent="GameBoard/Pawns" instance=ExtResource( 13 )]
+[node name="TestQuestGiver" parent="GameBoard/Pawns" instance=ExtResource( 12 )]
 position = Vector2( -203.302, 44.4365 )
 
-[node name="TestQuestReceiver" parent="GameBoard/Pawns" instance=ExtResource( 14 )]
+[node name="TestQuestReceiver" parent="GameBoard/Pawns" instance=ExtResource( 13 )]
 position = Vector2( -47.4442, 41.5357 )
+
+[node name="EncounterPawn" parent="GameBoard/Pawns" instance=ExtResource( 8 )]
+position = Vector2( -510, 614 )
+
+[node name="CollisionShape2D" parent="GameBoard/Pawns/EncounterPawn" index="3"]
+shape = SubResource( 3 )
+
+[node name="TileUpdate" parent="GameBoard/Pawns/EncounterPawn/Actions" index="0" instance_placeholder="res://src/map/pawns/actions/StartCombatAction.tscn"]
+script = ExtResource( 14 )
 
 [node name="MapInterface" type="CanvasLayer" parent="."]
 pause_mode = 2
@@ -206,8 +202,8 @@ layer = 100
 [node name="DialogueBox" parent="MapInterface" instance=ExtResource( 15 )]
 visible = false
 
-[editable path="GameBoard/Pawns/EncounterPawn"]
-
 [editable path="GameBoard/Pawns/DialoguePawn"]
 
 [editable path="GameBoard/Pawns/DialogueCombatPawn"]
+
+[editable path="GameBoard/Pawns/EncounterPawn"]

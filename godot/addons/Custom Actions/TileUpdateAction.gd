@@ -7,6 +7,7 @@ func interact() -> void:
 	get_tree().paused = false
 	#local_map.start_encounter(formation)
 	print("You interacted with me!")
+	local_map.update_tile(0,0,0)
 	emit_signal("finished")
 
 

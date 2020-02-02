@@ -27,5 +27,5 @@ func play_dialogue(data):
 	dialogue_box.start(data)
 	yield(dialogue_box, "dialogue_ended")
 
-#function update_tile():
-#	print("Updating tile!")
+func update_tile(x, y, new_tile):
+	grid.update_tile(x, y, new_tile)
