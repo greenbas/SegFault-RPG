@@ -30,3 +30,20 @@ func play_dialogue(data):
 func update_tile(n):
 	grid.update_tile(n)
 	
+func init_dark():
+	$GameBoard/Pawns/Sparkle01.visible = false
+	$GameBoard/Pawns/Sparkle02.visible = false
+	$GameBoard/Pawns/Sparkle04.visible = false
+	$GameBoard/Pawns/Sparkle05.visible = false
+	$GameBoard/Pawns/Sparkle06.visible = false
+	$GameBoard/Pawns/Sparkle07.visible = false
+
+func enable_the_light():
+	$Map.visible = true
+	$DarkMap.visible = false
+	$GameBoard/Pawns/Sparkle01.visible = true
+	$GameBoard/Pawns/Sparkle02.visible = true
+	$GameBoard/Pawns/Sparkle04.visible = true
+	$GameBoard/Pawns/Sparkle05.visible = true
+	$GameBoard/Pawns/Sparkle06.visible = true
+	$GameBoard/Pawns/Sparkle07.visible = true
