@@ -326,7 +326,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="SegFault-RPG"
+config/name="SegFault RPG"
 run/main_scene="res://src/main/Game.tscn"
 config/icon="res://icon.png"
 config/version="0.3.0"
