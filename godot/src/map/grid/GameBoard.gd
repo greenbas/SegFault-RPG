@@ -16,6 +16,7 @@ onready var GlobalVars = get_node("/root/GlobalVars")
 
 func _ready():
 	for pawn in pawns.get_children():
+		print("Placing %s" % pawn.name)
 		pawn.position = request_move(pawn, Vector2(0, 0))
 		pawn.initialize(self)
 		set_cellv(world_to_map(pawn.position), pawn.type)
@@ -61,11 +62,10 @@ func update_pawn_position(pawn : PawnActor, cell_start : Vector2, cell_target : 
 func calculate_world_pos(grid_pos : Vector2) -> Vector2:
 	return map_to_world(grid_pos) - cell_size / 2
 
-var sparkle01 = false
-func update_tile(num):
+func update_tile(name):
 	#$Pawns/Sparkle01.visible = false
-	GlobalVars.GlobalVars["sparkle0%s" % num] = true
-	print("Got sparkle0%s" % num)
+	GlobalVars.GlobalVars[name] = true
+	print("Got %s" % name)
 	#var t_id : Vector2 = Vector2(-6, 5)
 	#var new_tile = pawns.get_children()[1].type
 	#print("Tile type = %s" % get_cellv(t_id))

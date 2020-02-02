@@ -21,12 +21,14 @@ __meta__ = {
 }
 type = 2
 vanish_on_interaction = true
+AUTO_START_INTERACTION = true
 
 [node name="Pivot" type="Position2D" parent="."]
 
 [node name="PawnAnim" parent="Pivot" instance=ExtResource( 2 )]
 
 [node name="QuestBubble" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 56.0923, -39.7058 )
 
 [node name="DialogueBalloon" type="Sprite" parent="."]

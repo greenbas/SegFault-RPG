@@ -5,6 +5,5 @@ export var formation : PackedScene
 
 func interact() -> void:
 	get_tree().paused = false
-	#$Pawns/Sparkle01.visible = false
-	local_map.update_tile(1)
+	local_map.update_tile(get_parent().get_parent().name)
 	emit_signal("finished")

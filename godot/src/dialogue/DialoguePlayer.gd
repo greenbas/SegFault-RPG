@@ -16,8 +16,8 @@ onready var gVarsNode = get_node("/root/GlobalVars")
 onready var Gvars = gVarsNode.GlobalVars
 onready var sfxPlayer = get_node("/root/SoundPlayer")
 
-func _ready(): 
-	sfxPlayer.pause_mode = Node.PAUSE_MODE_PROCESS
+#func _ready(): 
+#	sfxPlayer.pause_mode = Node.PAUSE_MODE_PROCESS
 
 func start(dialogue_dict):
 	"""
