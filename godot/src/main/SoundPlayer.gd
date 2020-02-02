@@ -24,3 +24,10 @@ func diaMCexclaim():
 
 
 # NPC Character Dialog
+
+#Character
+#const charactername = preload("res://assets/audio/sound/dialog/file.ogg")
+
+#func charactersound():
+#	stream = charactername
+#	play()
