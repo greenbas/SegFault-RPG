@@ -51,3 +51,14 @@ func enable_the_light():
 	$GameBoard/SunSprite.visible = true
 	$GameBoard/SundogSprite.visible = true
 	$GameBoard/RuinsSprite.visible = true
+
+func plant_seed():
+	print("Plant seed")
+	$GameBoard/ForestGoodSprite.visible = true
+	$GameBoard/ForestGlitchSprite.visible = false
+	
+func give_feather():
+	print("Give feather")
+	$GameBoard/PreeteeGoodSprite.visible = true
+	$GameBoard/PreeteeGlitchSprite.visible = false
+	

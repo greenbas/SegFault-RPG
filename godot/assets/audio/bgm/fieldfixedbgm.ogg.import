@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fieldfixedbgm.ogg-175820c57e273057261c800a87c6be2f.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/fieldfixedbgm.ogg"
+dest_files=[ "res://.import/fieldfixedbgm.ogg-175820c57e273057261c800a87c6be2f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

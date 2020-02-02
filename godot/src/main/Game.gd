@@ -23,6 +23,7 @@ func _ready():
 	local_map.visible = true
 	local_map.connect("enemies_encountered", self, "enter_battle")
 	local_map.init_dark()
+	#music_player.play_glitchbgm()
 	
 
 func enter_battle(formation: Formation):

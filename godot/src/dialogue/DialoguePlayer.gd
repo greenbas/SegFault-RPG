@@ -69,8 +69,9 @@ func _update():
 	if _conversation[_index_current].has("sfx") == true:
 		var sfxID = _conversation[_index_current].sfx
 		sfxPlayer.diaMCspeech()
-	text = _conversation[_index_current].text
-	title = _conversation[_index_current].name
-	expression = _conversation[_index_current].expression
+	if not _conversation[_index_current].has("type"):
+		text = _conversation[_index_current].text
+		title = _conversation[_index_current].name
+		expression = _conversation[_index_current].expression
 	if _index_current == _conversation.size() - 1:
 		emit_signal("finished")

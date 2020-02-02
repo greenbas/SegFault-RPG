@@ -1,0 +1,95 @@
+{
+    "1": {
+        "type": "itemcheck",
+        "name": "Dialogue01",
+        "expression": 17,
+        "text": "2"
+    },
+    "2": {
+        "type": "itemcheck",
+        "name": "Sparkle04",
+        "expression": 9,
+        "text": "3"
+    },
+    "3": {
+        "name": "Dragon Thing",
+        "expression": "neutral",
+        "text": "&C%^^T***ASHFKLJGKLJHJLASLIHVLIH"
+    },
+    "4": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Oh, you're the one who lost your voice... Ko Leido, right? I'm Sigurd."
+    },
+    "5": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "(That's right, Ko Leido's voice files got lost somehow.)"
+    },
+    "6": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "(After all the time we spent recording them, too...)"
+    },
+    "7": {
+        "name": "Ko Lido",
+        "expression": "neutral",
+        "text": "&DG&*GHAFHBDJPJ:DJBJOIIOGHVJIZDJDIGDJIJ"
+    },
+    "8": {
+        "type": "jump",
+        "name": 18,
+        "expression": "",
+        "text": ""
+    },
+    "9": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Ko Leido, right? Here you go."
+    },
+    "10": {
+        "name": "Ko Lido",
+        "expression": "neutral",
+        "text": "My Voice!"
+    },
+    "11": {
+        "name": "Ko Lido",
+        "expression": "neutral",
+        "text": "I crashed into a wall and my voice was stolen by the winds..."
+    },
+    "12": {
+        "name": "Ko Lido",
+        "expression": "neutral",
+        "text": "But you retrieved it! Truly you are the chosen one!"
+    },
+    "13": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Chosen by something, anyway. I'm glad you're all fixed up."
+    },
+    "14": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "(Sounds like the BGM is fixed up, too...)"
+    },
+	"15": {
+		"type":"raise",
+		"name":"Dialogue01"
+    },
+    "16": {
+        "type": "jump",
+        "name": 18,
+        "expression": "",
+        "text": ""
+    },
+    "17": {
+        "name": "Ko Lido",
+        "expression": "neutral",
+        "text": "Thank you so much!"
+    },
+    "18": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    }
+}
