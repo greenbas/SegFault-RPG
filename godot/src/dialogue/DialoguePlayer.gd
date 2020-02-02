@@ -16,8 +16,8 @@ onready var gVarsNode = get_node("/root/GlobalVars")
 onready var Gvars = gVarsNode.GlobalVars
 onready var sfxPlayer = get_node("/root/SoundPlayer")
 
-#func _ready(): 
-#	sfxPlayer.pause_mode = Node.PAUSE_MODE_PROCESS
+func _ready(): 
+	sfxPlayer.pause_mode = Node.PAUSE_MODE_PROCESS
 
 func start(dialogue_dict):
 	"""
@@ -31,7 +31,6 @@ func start(dialogue_dict):
 	_update()
 
 func next():
-	
 	_index_current += 1
 	if _conversation[_index_current].has("type"):
 		var arg_1
@@ -44,7 +43,7 @@ func next():
 		else:
 			 arg_2 = ''
 		if _conversation[_index_current].has('text'):
-			arg_3 = _conversation[_index_current].text or ''
+			arg_3 = _conversation[_index_current].text
 		else: 
 			arg_3 = ''
 		if type == 'jump':
@@ -66,6 +65,7 @@ func next():
 	_update()
 
 func _update():
+	print(_index_current)
 	if _conversation[_index_current].has("sfx") == true:
 		var sfxID = _conversation[_index_current].sfx
 		sfxPlayer.diaMCspeech()
