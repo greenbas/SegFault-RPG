@@ -11,18 +11,24 @@ func interact() -> void:
 	yield(local_map.play_dialogue(dialogue), "completed")
 	var name = get_parent().get_parent().name
 	print("%s" % name)
-	if name == "Dialogue01":
+	if name == "Dialogue01": # Intro
 		if GlobalVars.GlobalVars.Sparkle04 == true:
-			MusicPlayer.play_fixedbgm()
 			GlobalVars.GlobalVars.Dialogue01 = true
+			MusicPlayer.play_fixedbgm()
 	if name == "Dialogue02":
 		if GlobalVars.GlobalVars.Sparkle07 == true:
+			GlobalVars.GlobalVars.Dialogue02 = true
 			local_map.plant_seed()
-		GlobalVars.GlobalVars.Dialogue02 = true
 	if name == "Dialogue03":
 		if GlobalVars.GlobalVars.Sparkle01 == true:
+			GlobalVars.GlobalVars.Dialogue03 = true
 			local_map.give_feather()
-		GlobalVars.GlobalVars.Dialogue03 = true
+	if name == "Dialogue04": # Heliotrope / Sundog
+		# Don't let this trigger before the light's on
+		if GlobalVars.GlobalVars.Sparkle03 and GlobalVars.GlobalVars.Dialogue04 == false:
+			GlobalVars.GlobalVars.Dialogue04 = true
+			local_map.quests_received() # First time only
+		
 	emit_signal("finished")
 
 func load_dialogue(file_path) -> Dictionary:

@@ -1,4 +1,9 @@
 {
+    "0": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    },
     "1": {
         "type": "itemcheck",
         "name": "Dialogue01",

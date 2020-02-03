@@ -41,16 +41,22 @@ func init_dark():
 func enable_the_light():
 	$Map.visible = true
 	$DarkMap.visible = false
+	$GameBoard/KoLeidoSprite.visible = true
+	$GameBoard/SunSprite.visible = true
+	$GameBoard/SundogSprite.visible = true
+	$GameBoard/RuinsSprite.visible = true
+	$GameBoard/Pawns/Dialogue04.visible = true
+
+func quests_received():
+	$GameBoard/Pawns/Dialogue01.visible = true
+	$GameBoard/Pawns/Dialogue02.visible = true
+	$GameBoard/Pawns/Dialogue03.visible = true
 	$GameBoard/Pawns/Sparkle01.visible = true
 	$GameBoard/Pawns/Sparkle02.visible = true
 	$GameBoard/Pawns/Sparkle04.visible = true
 	$GameBoard/Pawns/Sparkle05.visible = true
 	$GameBoard/Pawns/Sparkle06.visible = true
 	$GameBoard/Pawns/Sparkle07.visible = true
-	$GameBoard/KoLeidoSprite.visible = true
-	$GameBoard/SunSprite.visible = true
-	$GameBoard/SundogSprite.visible = true
-	$GameBoard/RuinsSprite.visible = true
 
 func plant_seed():
 	print("Plant seed")

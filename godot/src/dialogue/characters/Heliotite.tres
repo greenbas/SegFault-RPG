@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://assets/sprites/custom_jo_art/Heliolite Dialogue.png" type="Texture" id=1]
+[ext_resource path="res://src/dialogue/characters/Character.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+display_name = "Heliotite"
+backstory = "The sun dog
+"
+expressions = {
+"neutral": ExtResource( 1 )
+}
