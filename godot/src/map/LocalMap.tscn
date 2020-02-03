@@ -511,10 +511,9 @@ shape = SubResource( 2 )
 
 [node name="Dialogue" parent="GameBoard/Pawns/Dialogue02/Actions" index="0" instance=ExtResource( 18 )]
 script = ExtResource( 19 )
-dialogue_file_path = "res://src/dialogue/data/kldialogue.json"
+dialogue_file_path = "res://src/dialogue/data/null_conversation.json"
 
 [node name="Dialogue03" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
-editor/display_folded = true
 position = Vector2( 1391.83, 837.687 )
 type = 1
 vanish_on_interaction = false
@@ -530,7 +529,7 @@ shape = SubResource( 2 )
 
 [node name="Dialogue" parent="GameBoard/Pawns/Dialogue03/Actions" index="0" instance=ExtResource( 18 )]
 script = ExtResource( 19 )
-dialogue_file_path = "res://src/dialogue/data/kldialogue.json"
+dialogue_file_path = "res://src/dialogue/data/null_conversation.json"
 
 [node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
 editor/display_folded = true
