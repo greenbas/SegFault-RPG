@@ -31,14 +31,28 @@ func update_tile(n):
 	grid.update_tile(n)
 	
 func init_dark():
+	print("Initiate the darkness")
 	$GameBoard/Pawns/Sparkle01.visible = false
 	$GameBoard/Pawns/Sparkle02.visible = false
 	$GameBoard/Pawns/Sparkle04.visible = false
 	$GameBoard/Pawns/Sparkle05.visible = false
 	$GameBoard/Pawns/Sparkle06.visible = false
 	$GameBoard/Pawns/Sparkle07.visible = false
+	$GameBoard/Pawns/Dialogue01.visible = false
+	$GameBoard/Pawns/Dialogue02.visible = false
+	$GameBoard/Pawns/Dialogue03.visible = false
+	$GameBoard/Pawns/Dialogue04.visible = false
+	$GameBoard/Pawns/DialoguePawn.visible = false
+	$GameBoard/Pawns/Door01.visible = false
+	$GameBoard/Pawns/Door02.visible = false
+	$GameBoard/Pawns/Door03.visible = false
+	$GameBoard/Pawns/DoorFinal.visible = false
+
+func done_intro():
+	$GameBoard/Pawns/DialoguePawn.visible = false
 
 func enable_the_light():
+	print("Enable the light")
 	$Map.visible = true
 	$DarkMap.visible = false
 	$GameBoard/KoLeidoSprite.visible = true
@@ -48,9 +62,11 @@ func enable_the_light():
 	$GameBoard/Pawns/Dialogue04.visible = true
 
 func quests_received():
+	print("Quests received")
 	$GameBoard/Pawns/Dialogue01.visible = true
 	$GameBoard/Pawns/Dialogue02.visible = true
 	$GameBoard/Pawns/Dialogue03.visible = true
+	#$GameBoard.hide_pawn("Sparkle01")
 	$GameBoard/Pawns/Sparkle01.visible = true
 	$GameBoard/Pawns/Sparkle02.visible = true
 	$GameBoard/Pawns/Sparkle04.visible = true
@@ -68,3 +84,5 @@ func give_feather():
 	$GameBoard/PreeteeGoodSprite.visible = true
 	$GameBoard/PreeteeGlitchSprite.visible = false
 	
+func open_door(name):
+	grid.open_door(name)

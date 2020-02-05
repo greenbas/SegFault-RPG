@@ -1,0 +1,34 @@
+{
+    "0": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    },
+    "1": {
+        "type": "itemcheck",
+        "name": "Sparkle05",
+        "expression": 2,
+        "text": "4"
+    },
+    "2": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Look at that, this key fits."
+    },
+    "3": {
+        "type": "jump",
+        "name": 5,
+        "expression": "",
+        "text": ""
+    },
+    "4": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "This door is locked, and I don't have a key that fits."
+    },
+    "5": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    }
+}

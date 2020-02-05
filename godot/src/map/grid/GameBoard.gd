@@ -7,7 +7,7 @@ extends TileMap
 
 class_name GameBoard
 
-enum CELL_TYPES { EMPTY = -1, ACTOR, OBSTACLE, OBJECT }
+enum CELL_TYPES { EMPTY = -1, ACTOR, OBSTACLE, OBJECT, SPARKLE, DOOR, DIALOGUE, DOOR90, DOOR180, DOOR270 }
 
 var pathfinder : Pathfinder = Pathfinder.new()
 onready var pawns : YSort = $Pawns
@@ -70,3 +70,15 @@ func update_tile(name):
 	#var new_tile = pawns.get_children()[1].type
 	#print("Tile type = %s" % get_cellv(t_id))
 	#set_cellv(t_id, new_tile)
+	
+func open_door(name):
+	hide_pawn(name)
+	#for pawn in pawns.get_children():
+	#	if pawn.name == name:
+	#		pawn.visible = false
+	#		
+
+func hide_pawn(name):
+	for pawn in pawns.get_children():
+		if pawn.name == name:
+			pawn.visible = false

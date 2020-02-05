@@ -14,6 +14,7 @@ func load_dialogue(file_path) -> Dictionary:
 	Parses a JSON file and returns it as a dictionary
 	"""
 	var file = File.new()
+	print(file_path)
 	assert(file.file_exists(file_path))
 
 	file.open(file_path, file.READ)

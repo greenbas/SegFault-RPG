@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://src/map/pawns/PawnInteractive.gd" type="Script" id=1]
+[ext_resource path="res://src/map/pawns/DoorInteractive.gd" type="Script" id=1]
 [ext_resource path="res://src/map/pawns/PawnAnim.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/quest/QuestBubble.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/sprites/dialogue_balloon.png" type="Texture" id=4]
@@ -8,8 +8,8 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 30, 30 )
 
-[node name="InteractivePawn" type="Area2D" groups=[
-"interactive_pawns",
+[node name="DoorPawn" type="Area2D" groups=[
+"door_pawns",
 ]]
 pause_mode = 2
 position = Vector2( -2, 0 )
@@ -19,8 +19,9 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-vanish_on_interaction = false
-AUTO_START_INTERACTION = false
+type = 1
+vanish_on_interaction = true
+AUTO_START_INTERACTION = true
 
 [node name="Pivot" type="Position2D" parent="."]
 

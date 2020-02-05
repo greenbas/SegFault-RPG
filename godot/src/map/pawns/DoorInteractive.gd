@@ -6,7 +6,7 @@ Can work either with raycasts for interactions based on
 look direction or using an Area2D
 """
 extends PawnActor
-class_name PawnInteractive
+class_name DoorInteractive
 
 signal interaction_finished(pawn)
 
@@ -14,12 +14,11 @@ onready var raycasts : Node2D = $Raycasts
 onready var dialogue_balloon : Sprite = $DialogueBalloon
 onready var collision_shape : CollisionShape2D = $CollisionShape2D
 onready var actions : Node = $Actions
-#onready var pivots : Node = $Pivot
 
 onready var quest_bubble : Node = $QuestBubble
 
-export var vanish_on_interaction : = true
-export var AUTO_START_INTERACTION : = true
+export var vanish_on_interaction : = false
+export var AUTO_START_INTERACTION : = false
 export var sight_distance = 50
 export var facing = {
 	"up": true,
@@ -30,18 +29,7 @@ export var facing = {
 
 var active_raycasts := []
 
-var custom_vanish : bool
-var custom_auto_start : bool
-
-#func _draw():
-#	if visible:
-#		for child in pivots.get_children():
-#			child._draw()
-
 func _ready():
-	custom_vanish = true if name.begins_with("Sparkle") else false
-	custom_auto_start = true if name.begins_with("Sparkle") else false
-	
 	# Initializes raycast nodes, deactivates the area if using raycasts
 	# for player detection
 	var use_area = true
@@ -86,7 +74,7 @@ func _physics_process(delta : float) -> void:
 		for raycast in active_raycasts:
 			if not raycast.is_colliding():
 				continue
-			if AUTO_START_INTERACTION: #custom_auto_start: #
+			if AUTO_START_INTERACTION:
 				start_interaction()
 			dialogue_balloon.show()
 	else:
@@ -98,7 +86,7 @@ func _physics_process(delta : float) -> void:
 			dialogue_balloon.visible = false
 
 func _on_body_entered(body : PhysicsBody2D) -> void:
-	if AUTO_START_INTERACTION: #custom_auto_start: #
+	if AUTO_START_INTERACTION:
 		start_interaction()
 	else:
 		dialogue_balloon.show()
@@ -123,6 +111,6 @@ func start_interaction() -> void:
 		action.interact()
 		yield(action, "finished")
 	emit_signal("interaction_finished", self)
-	if vanish_on_interaction: #custom_vanish: #
+	if vanish_on_interaction:
 		queue_free()
 	get_tree().paused = false
