@@ -403,7 +403,7 @@
 34/shapes = [  ]
 34/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 30, 30 )
 
 [sub_resource type="RectangleShape2D" id=3]
@@ -528,7 +528,7 @@ position = Vector2( 30, -30 )
 texture = ExtResource( 23 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/Pawns/Dialogue01"]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Dialogue02" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
@@ -567,7 +567,7 @@ position = Vector2( 30, -30 )
 texture = ExtResource( 23 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/Pawns/Dialogue02"]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Dialogue03" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
@@ -606,10 +606,9 @@ position = Vector2( 30, -30 )
 texture = ExtResource( 23 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/Pawns/Dialogue03"]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Dialogue04" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
-editor/display_folded = true
 position = Vector2( 119.402, 440.857 )
 script = ExtResource( 20 )
 type = 5
@@ -628,7 +627,6 @@ script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/tasklist_dialogue.json"
 
 [node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
-editor/display_folded = true
 position = Vector2( 37.1023, 519.592 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
@@ -643,7 +641,7 @@ facing = {
 shape = SubResource( 3 )
 
 [node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 21 )]
-dialogue_file_path = "res://src/dialogue/data/test_conversation.json"
+dialogue_file_path = "res://src/dialogue/data/intro_dialogue.json"
 
 [node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
@@ -801,7 +799,6 @@ AUTO_START_INTERACTION = true
 script = ExtResource( 30 )
 
 [node name="Sparkle03" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
-editor/display_folded = true
 position = Vector2( 45.4983, -123.061 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
@@ -814,6 +811,10 @@ facing = {
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle03/Actions" index="0"]
 script = ExtResource( 30 )
+
+[node name="DialogueAction" type="Node" parent="GameBoard/Pawns/Sparkle03/Actions" index="1"]
+script = ExtResource( 22 )
+dialogue_file_path = "res://src/dialogue/data/lights_on_dialogue.json"
 
 [node name="Sparkle04" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true

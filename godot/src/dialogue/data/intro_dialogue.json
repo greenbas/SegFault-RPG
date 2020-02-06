@@ -1,0 +1,67 @@
+{
+    "1": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(Every year, I sign up for this event.)"
+    },
+    "2": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(Every year, we have fun. ...usually.)"
+    },
+    "3": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(But every year...)"
+    },
+    "4": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(We produce a broken mess.)"
+    },
+    "5": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(It's not my fault! It just happens!)"
+    },
+    "6": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(Global Game Jam is done for the year, and all the other groups are presenting)"
+    },
+    "7": {
+    	"name": "",
+    	"expression": "neutral",
+    	"text": "(but all I can concentrate on is the screen in front of me and my team members about to pass out from stress.)"
+    },
+    "8": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(We're going to present soon, and what do we have? Not even the menu works!)"
+    },
+    "9": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "I wish I could fix it all..."
+    },
+    "10": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Wait, what?"
+    },
+    "11": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Something's pulling me -- whoa!	"
+    },
+    "12": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Nngh... Did I get hit by a truck?"
+    },
+    "13": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "I can’t see a thing..."
+    }
+}

@@ -1,0 +1,112 @@
+{
+  "1": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "That worked! ...Wait."
+  },
+  "2": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "What kind of stress dream is this?"
+  },
+  "3": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "These are our graphics! Or at least that's what they looked like before we lost the light source."
+  },
+  "4": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "Was it you?"
+  },
+  "5": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "!"
+  },
+  "6": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "What the... Monster?"
+  },
+  "7": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(Wait, that's one of our NPCs, too! It's Helioliet!)"
+  },
+  "8": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "You! Are you the one who brought back the sun?"
+  },
+  "9": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "You mean fixed the light source? Yeah, I guess... I'm Sigurd."
+  },
+  "10": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "You are the one! You've saved all of us!"
+  },
+  "11": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "Well, sort of..."
+  },
+  "12": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "Sort of?"
+  },
+  "13": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "It wasn't just the sun. Other things went amiss when this world was created from the abyss."
+  },
+  "14": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "Many, many things..."
+  },
+  "15": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(You don't have to rub it in!)"
+  },
+  "16": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "I know not how you were able to save the light of the world, but could you help us with other things?"
+  },
+  "17": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "Uh, sure..."
+  },
+  "18": {
+    "name": "Helioliet",
+    "expression": "neutral",
+    "text": "Thank you! You will find a number of strange things in this area."
+  },
+  "19": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(Hmm... So I'm in the game?)"
+  },
+  "20": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(I've seen enough TV to know where this is going. All I need to do is bring back the logout function and I'll be able to get out.)"
+  },
+  "21": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(Which means fixing the menu.)"
+  },
+  "22": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(But while I'm here, I should fix the rest of the game, too...)"
+  }
+}

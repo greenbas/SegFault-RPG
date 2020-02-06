@@ -37,7 +37,7 @@
         "text": "(After all the time we spent recording them, too...)"
     },
     "7": {
-        "name": "Ko Lido",
+        "name": "Ko Leido",
         "expression": "neutral",
         "text": "&DG&*GHAFHBDJPJ:DJBJOIIOGHVJIZDJDIGDJIJ"
     },
@@ -53,17 +53,17 @@
         "text": "Ko Leido, right? Here you go."
     },
     "10": {
-        "name": "Ko Lido",
+        "name": "Ko Leido",
         "expression": "neutral",
         "text": "My Voice!"
     },
     "11": {
-        "name": "Ko Lido",
+        "name": "Ko Leido",
         "expression": "neutral",
         "text": "I crashed into a wall and my voice was stolen by the winds..."
     },
     "12": {
-        "name": "Ko Lido",
+        "name": "Ko Leido",
         "expression": "neutral",
         "text": "But you retrieved it! Truly you are the chosen one!"
     },
@@ -73,7 +73,7 @@
         "text": "Chosen by something, anyway. I'm glad you're all fixed up."
     },
     "14": {
-        "name": "Sigurd",
+        "name": "",
         "expression": "neutral",
         "text": "(Sounds like the BGM is fixed up, too...)"
     },
@@ -88,7 +88,7 @@
         "text": ""
     },
     "17": {
-        "name": "Ko Lido",
+        "name": "Ko Leido",
         "expression": "neutral",
         "text": "Thank you so much!"
     },
