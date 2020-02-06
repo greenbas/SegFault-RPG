@@ -17,8 +17,9 @@ onready var GlobalVars = get_node("/root/GlobalVars")
 func _ready():
 	for pawn in pawns.get_children():
 		print("Placing %s" % pawn.name)
-		pawn.position = request_move(pawn, Vector2(0, 0))
-		pawn.initialize(self)
+		if not pawn.name.begins_with("Door"):
+			pawn.position = request_move(pawn, Vector2(0, 0))
+			pawn.initialize(self)
 		set_cellv(world_to_map(pawn.position), pawn.type)
 	pathfinder.initialize(self, [0, 1, 2])
 
@@ -40,7 +41,12 @@ func request_move(pawn : PawnActor, direction : Vector2) -> Vector2:
 	var cell_target : Vector2 = cell_start + direction
 	
 	var cell_target_type : int = get_cellv(cell_target)
+	print("Cell target %s" % cell_target_type)
 	if cell_target_type == CELL_TYPES.EMPTY or cell_target_type == CELL_TYPES.OBJECT:
+		# Also check doors
+		#for door in $Door01:
+		var door = $Pawns/Door01
+		print("Door %s" % door.type)
 		return update_pawn_position(pawn, cell_start, cell_target)
 	return Vector2()
 
@@ -84,4 +90,5 @@ func delete_pawn(name):
 	for pawn in pawns.get_children():
 		if name.begins_with("Door") and pawn.name == name:
 			print("Opening %s" % name)
-			pawn.open_me()
+			pawn.type = pawn.CELL_TYPES.OBJECT
+			set_cellv(world_to_map(pawn.position), pawn.type)

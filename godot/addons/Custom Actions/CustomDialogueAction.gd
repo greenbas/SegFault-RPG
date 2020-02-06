@@ -11,16 +11,6 @@ func interact() -> void:
 	var dialogue : Dictionary =  load_dialogue(dialogue_file_path)
 	yield(local_map.play_dialogue(dialogue), "completed")
 	print("%s" % name)
-	if name == "Door01":
-		print("%s %s" % [name, GlobalVars.GlobalVars.Sparkle06])
-		if GlobalVars.GlobalVars.Sparkle02 == true:
-			local_map.open_door(name)
-	if name == "Door02":
-		if GlobalVars.GlobalVars.Sparkle05 == true:
-			local_map.open_door(name)
-	if name == "Door03":
-		if GlobalVars.GlobalVars.Sparkle06 == true:
-			local_map.open_door(name)
 	if name == "DialoguePawn": # Intro
 		local_map.done_intro()
 	if name == "Dialogue01": # Voice
@@ -52,6 +42,7 @@ func interact() -> void:
 			local_map.open_menu()
 	if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
 		local_map.fix_runes()
+		local_map.open_door("DoorFinal")
 	if name == "GameBoard":
 		if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
 			local_map.win_screen()

@@ -11,4 +11,10 @@ func interact() -> void:
 		local_map.enable_the_light()
 		#$Map.visible = true
 		#$DarkMap.visible = false
+	if name == "Sparkle02":
+		local_map.open_door("Door01")
+	if name == "Sparkle05":
+		local_map.open_door("Door02")
+	if name == "Sparkle06":
+		local_map.open_door("Door03")
 	emit_signal("finished")

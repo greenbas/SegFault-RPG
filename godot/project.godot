@@ -84,7 +84,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/dialogue/DialoguePlayer.gd"
 }, {
-"base": "PawnActor",
+"base": "Area2D",
+"class": "Door",
+"language": "GDScript",
+"path": "res://src/map/pawns/Door.gd"
+}, {
+"base": "PawnInteractive",
 "class": "DoorInteractive",
 "language": "GDScript",
 "path": "res://src/map/pawns/DoorInteractive.gd"
@@ -300,6 +305,7 @@ _global_script_class_icons={
 "DialogueBox": "",
 "DialogueInteractive": "",
 "DialoguePlayer": "",
+"Door": "",
 "DoorInteractive": "",
 "Drops": "",
 "Equipment": "",
