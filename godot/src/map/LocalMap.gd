@@ -118,6 +118,9 @@ func open_door(name):
 func open_menu():
 	$GameBoard/EndObjects.visible = true
 	#get_parent().party.visible = false
+	#grid.pawns.get_child(0).change_skin(grid.pawns.get_child(1).anim)
+	# I'm sure this one is getting the right skin, but I'm not finding PawnActor.change_skin yet
+	#get_parent().party.get_child(0).change_skin(get_parent().party.get_child(1).get_pawn_anim())
 
 func win_screen():
 	print("Win Screen")

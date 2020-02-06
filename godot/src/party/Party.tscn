@@ -23,6 +23,7 @@ pawn_anim_path = NodePath("GodettePawnAnim")
 growth = ExtResource( 3 )
 
 [node name="Battler" parent="Godette" index="0"]
+editor/display_folded = true
 party_member = true
 turn_order_icon = ExtResource( 4 )
 

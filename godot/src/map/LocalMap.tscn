@@ -814,16 +814,9 @@ AUTO_START_INTERACTION = true
 script = ExtResource( 30 )
 
 [node name="Sparkle03" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
-editor/display_folded = true
 position = Vector2( 45.4983, -123.061 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
-facing = {
-"down": true,
-"left": true,
-"right": true,
-"up": true
-}
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle03/Actions" index="0"]
 script = ExtResource( 30 )

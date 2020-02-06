@@ -1,12 +1,13 @@
 
 4	Skip ... dialogue
-4	Interact on Mouse
 5	Doors & keys
 5	Intro screen
+5	Dialogue shouldn't pause music
+6	Disappear Sigurd from menu (see LocalMap.open_menu)
 
 
 Art:
-- Different images for Dialogue points
+- Different images for Dialogue points, possibly keys, maybe even feather, voice, seed
 - Menu
-- Preeteebutu broken for dialogue
-
+- "Preeteebutu broken" for dialogue, possibly also sad ko leido
+- More cave images
