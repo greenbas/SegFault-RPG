@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://src/map/LocalMap.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/local_map/tilesets/cave-dark.png" type="Texture" id=2]
@@ -10,26 +10,28 @@
 [ext_resource path="res://assets/sprites/custom_jo_art/Forest.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprites/custom_jo_art/Broken Image File.png" type="Texture" id=9]
 [ext_resource path="res://assets/sprites/custom_jo_art/Preeteebutu.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprites/custom_jo_art/Ko Leido.png" type="Texture" id=11]
-[ext_resource path="res://assets/sprites/custom_jo_art/The Sun.png" type="Texture" id=12]
-[ext_resource path="res://assets/sprites/custom_jo_art/Sundog.png" type="Texture" id=13]
-[ext_resource path="res://assets/sprites/custom_jo_art/Ruins.png" type="Texture" id=14]
-[ext_resource path="res://src/map/grid/PawnContainer.gd" type="Script" id=15]
-[ext_resource path="res://src/party/Party.tscn" type="PackedScene" id=16]
-[ext_resource path="res://src/map/pawns/PawnInteractive.tscn" type="PackedScene" id=17]
-[ext_resource path="res://src/map/pawns/DialogueInteractive.gd" type="Script" id=18]
-[ext_resource path="res://src/map/pawns/actions/DialogueAction.tscn" type="PackedScene" id=19]
-[ext_resource path="res://addons/Custom Actions/CustomDialogueAction.gd" type="Script" id=20]
-[ext_resource path="res://assets/sprites/dialogue_balloon.png" type="Texture" id=21]
-[ext_resource path="res://src/map/pawns/actions/StartCombatAction.tscn" type="PackedScene" id=22]
-[ext_resource path="res://src/combat/battlers/formations/PorcupineFormation001.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/map/pawns/TestQuestGiver.tscn" type="PackedScene" id=24]
-[ext_resource path="res://src/map/pawns/TestQuestReceiver.tscn" type="PackedScene" id=25]
-[ext_resource path="res://src/map/pawns/DoorInteractive.gd" type="Script" id=26]
-[ext_resource path="res://src/map/pawns/actions/DialogueAction.gd" type="Script" id=27]
-[ext_resource path="res://addons/Custom Actions/TileUpdateAction.gd" type="Script" id=28]
-[ext_resource path="res://assets/sprites/cave_floor.png" type="Texture" id=29]
-[ext_resource path="res://src/interface/gui/DialogueBox.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/sprites/custom_jo_art/Sad Ko Leido.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/custom_jo_art/Ko Leido.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/custom_jo_art/The Sun.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/custom_jo_art/Sundog.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/custom_jo_art/Dark Ruins.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/custom_jo_art/Ruins.png" type="Texture" id=16]
+[ext_resource path="res://src/map/grid/PawnContainer.gd" type="Script" id=17]
+[ext_resource path="res://src/party/Party.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/map/pawns/PawnInteractive.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/map/pawns/DialogueInteractive.gd" type="Script" id=20]
+[ext_resource path="res://src/map/pawns/actions/DialogueAction.tscn" type="PackedScene" id=21]
+[ext_resource path="res://addons/Custom Actions/CustomDialogueAction.gd" type="Script" id=22]
+[ext_resource path="res://assets/sprites/dialogue_balloon.png" type="Texture" id=23]
+[ext_resource path="res://src/map/pawns/actions/StartCombatAction.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/combat/battlers/formations/PorcupineFormation001.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/map/pawns/TestQuestGiver.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/map/pawns/TestQuestReceiver.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/map/pawns/DoorInteractive.gd" type="Script" id=28]
+[ext_resource path="res://src/map/pawns/actions/DialogueAction.gd" type="Script" id=29]
+[ext_resource path="res://addons/Custom Actions/TileUpdateAction.gd" type="Script" id=30]
+[ext_resource path="res://assets/sprites/cave_floor.png" type="Texture" id=31]
+[ext_resource path="res://src/interface/gui/DialogueBox.tscn" type="PackedScene" id=32]
 
 [sub_resource type="TileSet" id=1]
 0/name = "cave.png 0g"
@@ -431,7 +433,7 @@ tile_data = PoolIntArray( -524296, 536870945, 0, -524295, 536870945, 0, -524294,
 tile_set = ExtResource( 4 )
 cell_size = Vector2( 80, 80 )
 format = 1
-tile_data = PoolIntArray( -589807, -1610612735, 0, -589806, -1610612735, 0, -589805, -1610612735, 0, -589804, -1610612735, 0, -524272, -1610612735, 0, -524271, -1610612735, 0, -524268, -1610612735, 0, -458737, -1610612735, 0, -458736, -1610612735, 0, -458733, -1610612735, 0, -458732, -1610612735, 0, -393201, -1610612735, 0, -393198, -1610612735, 0, -393197, -1610612735, 0, -327665, -1610612735, 0, -327661, -1610612735, 0, -196609, 1, 0, -262144, 1, 0, -262143, 1, 0, -262129, -1610612735, 0, -262128, -1610612735, 0, -262127, -1610612735, 0, -262125, -1610612735, 0, -262124, -1610612735, 0, -131073, 1, 0, -196608, 0, 0, -196607, 1, 0, -196606, 1, 0, -196605, 1, 0, -196604, 1, 0, -196603, 1, 0, -196598, -1610612735, 0, -196597, -1610612735, 0, -196596, -1610612735, 0, -196595, -1610612735, 0, -196594, -1610612735, 0, -196593, -1610612735, 0, -196588, -1610612735, 0, -196587, -1610612735, 0, -65537, 1, 0, -131067, 1, 0, -131065, -1610612735, 0, -131064, -1610612735, 0, -131063, -1610612735, 0, -131062, -1610612735, 0, -131059, -1610612735, 0, -131058, -1610612735, 0, -131055, -1610612735, 0, -131054, -1610612735, 0, -131051, -1610612735, 0, -131049, -1610612735, 0, -131048, -1610612735, 0, -131047, -1610612735, 0, -3, 1, 0, -2, 1, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65531, 1, 0, -65529, -1610612735, 0, -65523, -1610612735, 0, -65522, -1610612735, 0, -65519, -1610612735, 0, -65518, -1610612735, 0, -65517, -1610612735, 0, -65516, -1610612735, 0, -65515, -1610612735, 0, -65513, -1610612735, 0, -65511, -1610612735, 0, -65510, -1610612735, 0, -65509, -1610612735, 0, 65532, 1, 0, 65533, 1, 0, 65535, 1, 0, 0, 1, 0, 3, 1, 0, 5, 1, 0, 6, -1610612735, 0, 7, -1610612735, 0, 9, -1610612735, 0, 10, -1610612735, 0, 11, -1610612735, 0, 16, -1610612735, 0, 17, -1610612735, 0, 23, -1610612735, 0, 27, -1610612735, 0, 131068, 1, 0, 65536, 1, 0, 65539, 1, 0, 65542, 1, 0, 65543, -1610612735, 0, 65545, -1610612735, 0, 65546, -1610612735, 0, 65549, -1610612735, 0, 65550, -1610612735, 0, 65551, -1610612735, 0, 65552, -1610612735, 0, 65559, -1610612735, 0, 65560, -1610612735, 0, 65561, -1610612735, 0, 65563, -1610612735, 0, 65564, -1610612735, 0, 196603, 1, 0, 196604, 1, 0, 196606, 1, 0, 131072, 1, 0, 131075, 1, 0, 131076, 1, 0, 131078, 1, 0, 131079, -1610612735, 0, 131080, -1610612735, 0, 131081, -1610612735, 0, 131082, -1610612735, 0, 131084, -1610612735, 0, 131085, -1610612735, 0, 131097, -1610612735, 0, 131100, -1610612735, 0, 262138, 1, 0, 262139, 1, 0, 262142, 1, 0, 196608, 1, 0, 196611, 1, 0, 196612, 1, 0, 196614, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 1, 0, 196621, -1610612735, 0, 196633, -1610612735, 0, 196634, -1610612735, 0, 196636, -1610612735, 0, 327673, 1, 0, 327674, 1, 0, 327677, 1, 0, 327678, 1, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262150, 1, 0, 262152, 1, 0, 262157, -1610612735, 0, 262170, -1610612735, 0, 262172, -1610612735, 0, 262173, -1610612735, 0, 393209, 1, 0, 393212, 1, 0, 393213, 1, 0, 393214, 1, 0, 393215, 1, 0, 327680, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327691, 1, 0, 327692, 1, 0, 327693, -1610612735, 0, 327706, -1610612735, 0, 327709, -1610612735, 0, 458744, 1, 0, 458745, 1, 0, 458746, 1, 0, 458750, 1, 0, 458751, 1, 0, 393219, 1, 0, 393223, 1, 0, 393224, 1, 0, 393227, 1, 0, 393228, 1, 0, 393229, 1, 0, 393242, -1610612735, 0, 393243, -1610612735, 0, 393245, -1610612735, 0, 524280, 1, 0, 524286, 1, 0, 524287, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458759, 1, 0, 458760, 1, 0, 458765, 1, 0, 458778, -1610612735, 0, 458779, -1610612735, 0, 458781, -1610612735, 0, 589816, 1, 0, 589818, 1, 0, 589819, 1, 0, 589820, 1, 0, 524289, 1, 0, 524290, 1, 0, 524293, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524301, 1, 0, 524314, -1610612735, 0, 524317, -1610612735, 0, 655352, 1, 0, 655354, 1, 0, 655355, 1, 0, 655356, 1, 0, 655357, 1, 0, 655358, 1, 0, 655359, 1, 0, 589824, 1, 0, 589825, 1, 0, 589829, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589837, 1, 0, 589840, -1610612735, 0, 589841, -1610612735, 0, 589842, -1610612735, 0, 589843, -1610612735, 0, 589845, -1610612735, 0, 589846, -1610612735, 0, 589847, -1610612735, 0, 589848, -1610612735, 0, 589849, -1610612735, 0, 589850, -1610612735, 0, 589852, -1610612735, 0, 589853, -1610612735, 0, 720888, 1, 0, 720891, 1, 0, 655365, 1, 0, 655366, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655373, 1, 0, 655376, -1610612735, 0, 655379, -1610612735, 0, 655380, -1610612735, 0, 655381, -1610612735, 0, 655388, -1610612735, 0, 786424, 1, 0, 786425, 1, 0, 786426, 1, 0, 786427, 1, 0, 720902, 1, 0, 720906, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 720912, 1, 0, 720914, -1610612735, 0, 720915, -1610612735, 0, 720916, -1610612735, 0, 720919, -1610612735, 0, 720920, -1610612735, 0, 720921, -1610612735, 0, 720922, -1610612735, 0, 720923, -1610612735, 0, 720924, -1610612735, 0, 786438, 1, 0, 786439, 1, 0, 786454, -1610612735, 0, 786455, -1610612735, 0, 851974, 1, 0, 851975, 1, 0, 851979, 1, 0, 851980, 1, 0, 851981, 1, 0, 851984, 1, 0, 851985, 1, 0, 851986, 1, 0, 851987, -1610612735, 0, 851988, -1610612735, 0, 851989, -1610612735, 0, 851990, -1610612735, 0, 917508, 1, 0, 917509, 1, 0, 917510, 1, 0, 917514, 1, 0, 917515, 1, 0, 917517, 1, 0, 917521, 1, 0, 983044, 1, 0, 983048, 1, 0, 983051, 1, 0, 983052, 1, 0, 983053, 1, 0, 983054, 1, 0, 983057, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114125, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, -1610612735, 0, 1114130, -1610612735, 0, 1114131, -1610612735, 0, 1179656, 1, 0, 1179661, 1, 0, 1179663, 1, 0, 1179664, 1, 0, 1179667, 1, 0, 1245192, 1, 0, 1245193, 1, 0, 1245194, 1, 0, 1245196, 1, 0, 1245197, 1, 0, 1245202, 1, 0, 1245203, 1, 0, 1310730, 1, 0, 1310731, 1, 0, 1310732, 1, 0, 1310733, 1, 0, 1310734, 1, 0, 1310735, 1, 0, 1310736, 1, 0, 1310737, 1, 0, 1310738, 1, 0 )
+tile_data = PoolIntArray( -589807, -1610612735, 0, -589806, -1610612735, 0, -589805, -1610612735, 0, -589804, -1610612735, 0, -524272, -1610612735, 0, -524271, -1610612735, 0, -524268, -1610612735, 0, -458737, -1610612735, 0, -458736, -1610612735, 0, -458733, -1610612735, 0, -458732, -1610612735, 0, -393201, -1610612735, 0, -393198, -1610612735, 0, -393197, -1610612735, 0, -327665, -1610612735, 0, -327661, -1610612735, 0, -196609, 1, 0, -262144, 1, 0, -262143, 1, 0, -262129, -1610612735, 0, -262128, -1610612735, 0, -262127, -1610612735, 0, -262125, -1610612735, 0, -262124, -1610612735, 0, -131073, 1, 0, -196608, 0, 0, -196607, 1, 0, -196606, 1, 0, -196605, 1, 0, -196604, 1, 0, -196603, 1, 0, -196598, -1610612735, 0, -196597, -1610612735, 0, -196596, -1610612735, 0, -196595, -1610612735, 0, -196594, -1610612735, 0, -196593, -1610612735, 0, -196589, 1, 0, -196588, -1610612735, 0, -196587, -1610612735, 0, -65537, 1, 0, -131067, 1, 0, -131065, -1610612735, 0, -131064, -1610612735, 0, -131063, -1610612735, 0, -131062, -1610612735, 0, -131059, -1610612735, 0, -131058, -1610612735, 0, -131055, -1610612735, 0, -131051, -1610612735, 0, -131049, -1610612735, 0, -131048, -1610612735, 0, -131047, -1610612735, 0, -3, 1, 0, -2, 1, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65531, 1, 0, -65529, -1610612735, 0, -65523, -1610612735, 0, -65522, -1610612735, 0, -65519, -1610612735, 0, -65518, -1610612735, 0, -65517, -1610612735, 0, -65516, -1610612735, 0, -65515, -1610612735, 0, -65513, -1610612735, 0, -65511, -1610612735, 0, -65510, -1610612735, 0, -65509, -1610612735, 0, 65532, 1, 0, 65533, 1, 0, 65535, 1, 0, 0, 1, 0, 3, 1, 0, 5, 1, 0, 6, -1610612735, 0, 7, -1610612735, 0, 9, -1610612735, 0, 10, -1610612735, 0, 11, -1610612735, 0, 16, -1610612735, 0, 17, -1610612735, 0, 23, -1610612735, 0, 27, -1610612735, 0, 131068, 1, 0, 65536, 1, 0, 65539, 1, 0, 65542, 1, 0, 65543, -1610612735, 0, 65545, -1610612735, 0, 65546, -1610612735, 0, 65549, -1610612735, 0, 65550, -1610612735, 0, 65551, -1610612735, 0, 65552, -1610612735, 0, 65559, -1610612735, 0, 65560, -1610612735, 0, 65561, -1610612735, 0, 65563, -1610612735, 0, 65564, -1610612735, 0, 196603, 1, 0, 196604, 1, 0, 196606, 1, 0, 131072, 1, 0, 131075, 1, 0, 131076, 1, 0, 131078, 1, 0, 131079, -1610612735, 0, 131080, -1610612735, 0, 131081, -1610612735, 0, 131082, -1610612735, 0, 131084, -1610612735, 0, 131085, -1610612735, 0, 131097, -1610612735, 0, 131100, -1610612735, 0, 262138, 1, 0, 262139, 1, 0, 262142, 1, 0, 196608, 1, 0, 196611, 1, 0, 196612, 1, 0, 196614, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 1, 0, 196621, -1610612735, 0, 196633, -1610612735, 0, 196634, -1610612735, 0, 196636, -1610612735, 0, 327673, 1, 0, 327674, 1, 0, 327677, 1, 0, 327678, 1, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262150, 1, 0, 262152, 1, 0, 262157, -1610612735, 0, 262170, -1610612735, 0, 262172, -1610612735, 0, 262173, -1610612735, 0, 393209, 1, 0, 393212, 1, 0, 393213, 1, 0, 393214, 1, 0, 393215, 1, 0, 327680, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327691, 1, 0, 327692, 1, 0, 327693, -1610612735, 0, 327706, -1610612735, 0, 327709, -1610612735, 0, 458744, 1, 0, 458745, 1, 0, 458746, 1, 0, 458750, 1, 0, 458751, 1, 0, 393219, 1, 0, 393223, 1, 0, 393224, 1, 0, 393227, 1, 0, 393228, 1, 0, 393229, 1, 0, 393242, -1610612735, 0, 393243, -1610612735, 0, 393245, -1610612735, 0, 524280, 1, 0, 524286, 1, 0, 524287, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458759, 1, 0, 458760, 1, 0, 458765, 1, 0, 458778, -1610612735, 0, 458779, -1610612735, 0, 458781, -1610612735, 0, 589816, 1, 0, 589818, 1, 0, 589819, 1, 0, 589820, 1, 0, 524289, 1, 0, 524290, 1, 0, 524293, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524301, 1, 0, 524314, -1610612735, 0, 524317, -1610612735, 0, 655352, 1, 0, 655354, 1, 0, 655355, 1, 0, 655356, 1, 0, 655357, 1, 0, 655358, 1, 0, 655359, 1, 0, 589824, 1, 0, 589825, 1, 0, 589829, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589837, 1, 0, 589840, -1610612735, 0, 589841, -1610612735, 0, 589842, -1610612735, 0, 589843, -1610612735, 0, 589845, -1610612735, 0, 589846, -1610612735, 0, 589847, -1610612735, 0, 589848, -1610612735, 0, 589849, -1610612735, 0, 589850, -1610612735, 0, 589852, -1610612735, 0, 589853, -1610612735, 0, 720888, 1, 0, 720891, 1, 0, 655365, 1, 0, 655366, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655373, 1, 0, 655376, -1610612735, 0, 655379, -1610612735, 0, 655380, -1610612735, 0, 655381, -1610612735, 0, 655388, -1610612735, 0, 786424, 1, 0, 786425, 1, 0, 786426, 1, 0, 786427, 1, 0, 720902, 1, 0, 720906, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 720912, 1, 0, 720914, -1610612735, 0, 720915, -1610612735, 0, 720916, -1610612735, 0, 720919, -1610612735, 0, 720920, -1610612735, 0, 720921, -1610612735, 0, 720922, -1610612735, 0, 720923, -1610612735, 0, 720924, -1610612735, 0, 786438, 1, 0, 786439, 1, 0, 786454, -1610612735, 0, 786455, -1610612735, 0, 851974, 1, 0, 851975, 1, 0, 851979, 1, 0, 851980, 1, 0, 851981, 1, 0, 851984, 1, 0, 851985, 1, 0, 851986, 1, 0, 851987, -1610612735, 0, 851988, -1610612735, 0, 851989, -1610612735, 0, 851990, -1610612735, 0, 917508, 1, 0, 917509, 1, 0, 917510, 1, 0, 917514, 1, 0, 917515, 1, 0, 917517, 1, 0, 917521, 1, 0, 983044, 1, 0, 983048, 1, 0, 983051, 1, 0, 983052, 1, 0, 983053, 1, 0, 983054, 1, 0, 983057, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114125, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, -1610612735, 0, 1114130, -1610612735, 0, 1114131, -1610612735, 0, 1179656, 1, 0, 1179661, 1, 0, 1179663, 1, 0, 1179664, 1, 0, 1179667, 1, 0, 1245192, 1, 0, 1245193, 1, 0, 1245194, 1, 0, 1245196, 1, 0, 1245197, 1, 0, 1245202, 1, 0, 1245203, 1, 0, 1310730, 1, 0, 1310731, 1, 0, 1310732, 1, 0, 1310733, 1, 0, 1310734, 1, 0, 1310735, 1, 0, 1310736, 1, 0, 1310737, 1, 0, 1310738, 1, 0 )
 script = ExtResource( 5 )
 
 [node name="SpawningPoint" parent="GameBoard" instance=ExtResource( 6 )]
@@ -455,34 +457,44 @@ visible = false
 position = Vector2( 872.156, 599.627 )
 texture = ExtResource( 10 )
 
+[node name="KoLeidoSadSprite" type="Sprite" parent="GameBoard"]
+visible = false
+position = Vector2( 879.072, 599.049 )
+texture = ExtResource( 11 )
+
 [node name="KoLeidoSprite" type="Sprite" parent="GameBoard"]
 visible = false
 position = Vector2( 878.469, 599.627 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 
 [node name="SunSprite" type="Sprite" parent="GameBoard"]
 visible = false
 position = Vector2( 880.126, 601.283 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 
 [node name="SundogSprite" type="Sprite" parent="GameBoard"]
 visible = false
 position = Vector2( 882.469, 599.627 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
+
+[node name="RuinsDarkSprite" type="Sprite" parent="GameBoard"]
+visible = false
+position = Vector2( 875.841, 600.432 )
+texture = ExtResource( 15 )
 
 [node name="RuinsSprite" type="Sprite" parent="GameBoard"]
 visible = false
 position = Vector2( 876.578, 599.858 )
-texture = ExtResource( 14 )
+texture = ExtResource( 16 )
 
 [node name="Pawns" type="YSort" parent="GameBoard"]
-script = ExtResource( 15 )
-party_scene = ExtResource( 16 )
+script = ExtResource( 17 )
+party_scene = ExtResource( 18 )
 
-[node name="Dialogue01" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Dialogue01" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
-position = Vector2( 421.681, 1247.81 )
-script = ExtResource( 18 )
+position = Vector2( 440.96, 1238.17 )
+script = ExtResource( 20 )
 type = 5
 facing = {
 "down": true,
@@ -506,22 +518,22 @@ collision_mask = 2
 cast_to = Vector2( 50, 0 )
 collision_mask = 2
 
-[node name="Dialogue" parent="GameBoard/Pawns/Dialogue01/Actions" index="0" instance=ExtResource( 19 )]
-script = ExtResource( 20 )
+[node name="Dialogue" parent="GameBoard/Pawns/Dialogue01/Actions" index="0" instance=ExtResource( 21 )]
+script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/kldialogue.json"
 
 [node name="DialogueBalloon" type="Sprite" parent="GameBoard/Pawns/Dialogue01"]
 visible = false
 position = Vector2( 30, -30 )
-texture = ExtResource( 21 )
+texture = ExtResource( 23 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/Pawns/Dialogue01"]
 shape = SubResource( 4 )
 
-[node name="Dialogue02" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Dialogue02" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 1473.86, 1476.91 )
-script = ExtResource( 18 )
+script = ExtResource( 20 )
 type = 5
 facing = {
 "down": true,
@@ -545,22 +557,22 @@ collision_mask = 2
 cast_to = Vector2( 50, 0 )
 collision_mask = 2
 
-[node name="Dialogue" parent="GameBoard/Pawns/Dialogue02/Actions" index="0" instance=ExtResource( 19 )]
-script = ExtResource( 20 )
+[node name="Dialogue" parent="GameBoard/Pawns/Dialogue02/Actions" index="0" instance=ExtResource( 21 )]
+script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/null_conversation.json"
 
 [node name="DialogueBalloon" type="Sprite" parent="GameBoard/Pawns/Dialogue02"]
 visible = false
 position = Vector2( 30, -30 )
-texture = ExtResource( 21 )
+texture = ExtResource( 23 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/Pawns/Dialogue02"]
 shape = SubResource( 4 )
 
-[node name="Dialogue03" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Dialogue03" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 1391.83, 837.687 )
-script = ExtResource( 18 )
+script = ExtResource( 20 )
 type = 5
 facing = {
 "down": true,
@@ -584,22 +596,22 @@ collision_mask = 2
 cast_to = Vector2( 50, 0 )
 collision_mask = 2
 
-[node name="Dialogue" parent="GameBoard/Pawns/Dialogue03/Actions" index="0" instance=ExtResource( 19 )]
-script = ExtResource( 20 )
+[node name="Dialogue" parent="GameBoard/Pawns/Dialogue03/Actions" index="0" instance=ExtResource( 21 )]
+script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/null_conversation.json"
 
 [node name="DialogueBalloon" type="Sprite" parent="GameBoard/Pawns/Dialogue03"]
 visible = false
 position = Vector2( 30, -30 )
-texture = ExtResource( 21 )
+texture = ExtResource( 23 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/Pawns/Dialogue03"]
 shape = SubResource( 4 )
 
-[node name="Dialogue04" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Dialogue04" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 119.402, 440.857 )
-script = ExtResource( 18 )
+script = ExtResource( 20 )
 type = 5
 facing = {
 "down": true,
@@ -612,10 +624,10 @@ facing = {
 visible = false
 
 [node name="DialogueAction" type="Node" parent="GameBoard/Pawns/Dialogue04/Actions" index="0"]
-script = ExtResource( 20 )
+script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/tasklist_dialogue.json"
 
-[node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 37.1023, 519.592 )
 vanish_on_interaction = true
@@ -630,10 +642,10 @@ facing = {
 [node name="CollisionShape2D" parent="GameBoard/Pawns/DialoguePawn" index="3"]
 shape = SubResource( 3 )
 
-[node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 19 )]
+[node name="Dialogue" parent="GameBoard/Pawns/DialoguePawn/Actions" index="0" instance=ExtResource( 21 )]
 dialogue_file_path = "res://src/dialogue/data/test_conversation.json"
 
-[node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="DialogueCombatPawn" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 visible = false
 position = Vector2( -466.547, -50.073 )
@@ -646,35 +658,35 @@ facing = {
 "up": true
 }
 
-[node name="Dialogue" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="0" instance=ExtResource( 19 )]
+[node name="Dialogue" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="0" instance=ExtResource( 21 )]
 dialogue_file_path = "res://src/dialogue/data/test_conversation.json"
 
-[node name="StartCombat" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="1" instance=ExtResource( 22 )]
-formation = ExtResource( 23 )
+[node name="StartCombat" parent="GameBoard/Pawns/DialogueCombatPawn/Actions" index="1" instance=ExtResource( 24 )]
+formation = ExtResource( 25 )
 
-[node name="TestQuestGiver" parent="GameBoard/Pawns" instance=ExtResource( 24 )]
+[node name="TestQuestGiver" parent="GameBoard/Pawns" instance=ExtResource( 26 )]
 visible = false
 position = Vector2( -585.302, 56.4365 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
 
-[node name="TestQuestReceiver" parent="GameBoard/Pawns" instance=ExtResource( 25 )]
+[node name="TestQuestReceiver" parent="GameBoard/Pawns" instance=ExtResource( 27 )]
 visible = false
 position = Vector2( -467.444, 59.5357 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
 
-[node name="EncounterPawn" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="EncounterPawn" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 visible = false
 position = Vector2( -586, -56 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
 
-[node name="Door01" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Door01" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
-position = Vector2( 516.466, 1238.17 )
-script = ExtResource( 26 )
+position = Vector2( 516.466, 1328.14 )
+script = ExtResource( 28 )
 facing = {
 "down": true,
 "left": true,
@@ -682,14 +694,14 @@ facing = {
 "up": true
 }
 
-[node name="Dialogue" parent="GameBoard/Pawns/Door01/Actions" index="0" instance=ExtResource( 19 )]
-script = ExtResource( 20 )
+[node name="Dialogue" parent="GameBoard/Pawns/Door01/Actions" index="0" instance=ExtResource( 21 )]
+script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/door01.json"
 
-[node name="Door02" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Door02" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
-position = Vector2( 1406.52, 920.06 )
-script = ExtResource( 26 )
+position = Vector2( 1308.52, 923.273 )
+script = ExtResource( 28 )
 facing = {
 "down": true,
 "left": true,
@@ -712,14 +724,14 @@ collision_mask = 2
 cast_to = Vector2( 50, 0 )
 collision_mask = 2
 
-[node name="Dialogue" parent="GameBoard/Pawns/Door02/Actions" index="0" instance=ExtResource( 19 )]
-script = ExtResource( 20 )
+[node name="Dialogue" parent="GameBoard/Pawns/Door02/Actions" index="0" instance=ExtResource( 21 )]
+script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/door02.json"
 
 [node name="DialogueBalloon" type="Sprite" parent="GameBoard/Pawns/Door02"]
 visible = false
 position = Vector2( 30, -30 )
-texture = ExtResource( 21 )
+texture = ExtResource( 23 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/Pawns/Door02"]
 shape = SubResource( 3 )
@@ -727,11 +739,11 @@ shape = SubResource( 3 )
 [node name="Raycasts" type="Node2D" parent="GameBoard/Pawns/Door02"]
 editor/display_folded = true
 
-[node name="Door03" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Door03" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
-position = Vector2( 1159.11, 1394.01 )
+position = Vector2( 1241.05, 1403.65 )
 rotation = 4.71239
-script = ExtResource( 26 )
+script = ExtResource( 28 )
 facing = {
 "down": true,
 "left": true,
@@ -745,15 +757,15 @@ shape = SubResource( 3 )
 [node name="Raycasts" parent="GameBoard/Pawns/Door03" index="4"]
 editor/display_folded = true
 
-[node name="Dialogue" parent="GameBoard/Pawns/Door03/Actions" index="0" instance=ExtResource( 19 )]
-script = ExtResource( 20 )
+[node name="Dialogue" parent="GameBoard/Pawns/Door03/Actions" index="0" instance=ExtResource( 21 )]
+script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/door03.json"
 
-[node name="DoorFinal" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="DoorFinal" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
-position = Vector2( 1554.33, -114.591 )
+position = Vector2( 1560.76, -206.167 )
 rotation = 4.71239
-script = ExtResource( 26 )
+script = ExtResource( 28 )
 facing = {
 "down": true,
 "left": true,
@@ -762,9 +774,9 @@ facing = {
 }
 
 [node name="DialogueAction" type="Node" parent="GameBoard/Pawns/DoorFinal/Actions" index="0"]
-script = ExtResource( 27 )
+script = ExtResource( 29 )
 
-[node name="Sparkle01" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Sparkle01" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( -442.909, 839.294 )
 vanish_on_interaction = true
@@ -777,18 +789,18 @@ facing = {
 }
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle01/Actions" index="0"]
-script = ExtResource( 28 )
+script = ExtResource( 30 )
 
-[node name="Sparkle02" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Sparkle02" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( -39.6516, 360.526 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle02/Actions" index="0"]
-script = ExtResource( 28 )
+script = ExtResource( 30 )
 
-[node name="Sparkle03" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Sparkle03" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 45.4983, -123.061 )
 vanish_on_interaction = true
@@ -801,9 +813,9 @@ facing = {
 }
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle03/Actions" index="0"]
-script = ExtResource( 28 )
+script = ExtResource( 30 )
 
-[node name="Sparkle04" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Sparkle04" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 680.106, 119.536 )
 vanish_on_interaction = true
@@ -816,9 +828,9 @@ facing = {
 }
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle04/Actions" index="0"]
-script = ExtResource( 28 )
+script = ExtResource( 30 )
 
-[node name="Sparkle05" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Sparkle05" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 762.042, 1483.54 )
 vanish_on_interaction = true
@@ -831,9 +843,9 @@ facing = {
 }
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle05/Actions" index="0"]
-script = ExtResource( 28 )
+script = ExtResource( 30 )
 
-[node name="Sparkle06" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Sparkle06" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 1552.49, -601.828 )
 vanish_on_interaction = true
@@ -846,9 +858,9 @@ facing = {
 }
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle06/Actions" index="0"]
-script = ExtResource( 28 )
+script = ExtResource( 30 )
 
-[node name="Sparkle07" parent="GameBoard/Pawns" instance=ExtResource( 17 )]
+[node name="Sparkle07" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
 position = Vector2( 1960.57, -37.9106 )
 vanish_on_interaction = true
@@ -861,17 +873,17 @@ facing = {
 }
 
 [node name="MapAction" type="Node" parent="GameBoard/Pawns/Sparkle07/Actions" index="0"]
-script = ExtResource( 28 )
+script = ExtResource( 30 )
 
 [node name="Empty_Floor_Coverup" type="Sprite" parent="GameBoard"]
 position = Vector2( 119.495, 432.602 )
-texture = ExtResource( 29 )
+texture = ExtResource( 31 )
 
 [node name="MapInterface" type="CanvasLayer" parent="."]
 pause_mode = 2
 layer = 100
 
-[node name="DialogueBox" parent="MapInterface" instance=ExtResource( 30 )]
+[node name="DialogueBox" parent="MapInterface" instance=ExtResource( 32 )]
 visible = false
 
 [editable path="GameBoard/Pawns/Dialogue01"]

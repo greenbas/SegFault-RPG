@@ -55,10 +55,10 @@ func enable_the_light():
 	print("Enable the light")
 	$Map.visible = true
 	$DarkMap.visible = false
-	$GameBoard/KoLeidoSprite.visible = true
+	$GameBoard/KoLeidoSadSprite.visible = true
 	$GameBoard/SunSprite.visible = true
 	$GameBoard/SundogSprite.visible = true
-	$GameBoard/RuinsSprite.visible = true
+	$GameBoard/RuinsDarkSprite.visible = true
 	#$GameBoard/Pawns/Dialogue04.visible = true
 	$GameBoard/Empty_Floor_Coverup.visible = false
 	$GameBoard.open_door("Door01")
@@ -84,11 +84,24 @@ func plant_seed():
 	print("Plant seed")
 	$GameBoard/ForestGoodSprite.visible = true
 	$GameBoard/ForestGlitchSprite.visible = false
-	
+	GlobalVars.GlobalVars.Seed = true
+
+func give_voice():
+	print("Give voice")
+	$GameBoard/KoLeidoSprite.visible = true
+	$GameBoard/KoLeidoSadSprite.visible = false
+	GlobalVars.GlobalVars.Voice = true
+
 func give_feather():
 	print("Give feather")
 	$GameBoard/PreeteeGoodSprite.visible = true
 	$GameBoard/PreeteeGlitchSprite.visible = false
+	GlobalVars.GlobalVars.Feather = true
 	
+func fix_runes():
+	$GameBoard/RuinsSprite.visible = true
+	$GameBoard/RuinsDarkSprite.visible = false
+	$GameBoard.open_door("DoorFinal")
+
 func open_door(name):
 	grid.open_door(name)

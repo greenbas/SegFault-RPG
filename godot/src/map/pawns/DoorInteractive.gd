@@ -116,4 +116,7 @@ func start_interaction() -> void:
 	get_tree().paused = false
 
 func open_me():
+	#type = $GameBoard.OBJECT
+	$CollisionShape2D.disabled = true
+	#$CollisionShape2D.queue_free()
 	queue_free()
