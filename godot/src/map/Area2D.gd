@@ -12,5 +12,3 @@ func _input_event(viewport, event, shape_idx):
 func on_click():
 	print("Quitting game!")
 	$WinDialogue.interact()
-	#$WinScreen.visible = true
-	#$QuitMenu_QuitText.visible = false

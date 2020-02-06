@@ -42,12 +42,13 @@ func interact() -> void:
 			GlobalVars.GlobalVars.Dialogue04 = true
 			local_map.quests_received() # First time only
 	if name == "Dialogue05": # Ruins
-		#if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
-		local_map.open_menu()
+		if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
+			local_map.open_menu()
 	if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
 		local_map.fix_runes()
 	if name == "GameBoard":
-		local_map.win_screen()
+		if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
+			local_map.win_screen()
 	emit_signal("finished")
 
 func load_dialogue(file_path) -> Dictionary:
