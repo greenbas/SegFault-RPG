@@ -13,13 +13,13 @@ func interact() -> void:
 	print("%s" % name)
 	if name == "Door01":
 		print("%s %s" % [name, GlobalVars.GlobalVars.Sparkle06])
-		if GlobalVars.GlobalVars.Sparkle06 == true:
+		if GlobalVars.GlobalVars.Sparkle02 == true:
 			local_map.open_door(name)
 	if name == "Door02":
 		if GlobalVars.GlobalVars.Sparkle05 == true:
 			local_map.open_door(name)
 	if name == "Door03":
-		if GlobalVars.GlobalVars.Sparkle02 == true:
+		if GlobalVars.GlobalVars.Sparkle06 == true:
 			local_map.open_door(name)
 	if name == "DialoguePawn": # Intro
 		local_map.done_intro()
@@ -28,14 +28,20 @@ func interact() -> void:
 			GlobalVars.GlobalVars.Dialogue01 = true
 			local_map.give_voice()
 			MusicPlayer.play_fixedbgm()
+		else:
+			local_map.show_voice()
 	if name == "Dialogue02":
 		if GlobalVars.GlobalVars.Sparkle07 == true:
 			GlobalVars.GlobalVars.Dialogue02 = true
 			local_map.plant_seed()
+		else:
+			local_map.show_seed()
 	if name == "Dialogue03":
 		if GlobalVars.GlobalVars.Sparkle01 == true:
 			GlobalVars.GlobalVars.Dialogue03 = true
 			local_map.give_feather()
+		else:
+			local_map.show_feather()
 	if name == "Dialogue04": # Heliotiet / Sundog
 		# Don't let this trigger before the light's on
 		if GlobalVars.GlobalVars.Sparkle03 and GlobalVars.GlobalVars.Dialogue04 == false:

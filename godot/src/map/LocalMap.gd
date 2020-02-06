@@ -74,13 +74,19 @@ func quests_received():
 	$GameBoard/Pawns/Dialogue01.visible = true
 	$GameBoard/Pawns/Dialogue02.visible = true
 	$GameBoard/Pawns/Dialogue03.visible = true
-	#$GameBoard.hide_pawn("Sparkle01")
-	$GameBoard/Pawns/Sparkle01.visible = true
+	#$GameBoard/Pawns/Sparkle01.visible = true # Later now
 	$GameBoard/Pawns/Sparkle02.visible = true
-	$GameBoard/Pawns/Sparkle04.visible = true
+	#$GameBoard/Pawns/Sparkle04.visible = true # Later now
 	$GameBoard/Pawns/Sparkle05.visible = true
 	$GameBoard/Pawns/Sparkle06.visible = true
+	#$GameBoard/Pawns/Sparkle07.visible = true # Later now
+
+func show_voice():
+	$GameBoard/Pawns/Sparkle04.visible = true
+func show_seed():
 	$GameBoard/Pawns/Sparkle07.visible = true
+func show_feather():
+	$GameBoard/Pawns/Sparkle01.visible = true
 
 func plant_seed():
 	print("Plant seed")

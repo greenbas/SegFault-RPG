@@ -1,5 +1,4 @@
 
-3	Make non-key sparkles invisible until you talk to the correct person
 4	Skip ... dialogue
 4	Interact on Mouse
 5	Doors & keys

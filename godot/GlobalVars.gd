@@ -6,7 +6,7 @@ extends Node
 var GlobalVars = {"lorem":"ipsum", "Sparkle01":false, "Sparkle02":false, "Sparkle03":false,
 	"Sparkle04":false, "Sparkle05":false, "Sparkle06":false, "Sparkle07":false,
 	"Dialogue01":false, "Dialogue02":false, "Dialogue03":false,"Dialogue04":false,
-	"Seed":false,"Voice":false,"Feathers":false,"IntroDone":false}
+	"Seed":false,"Voice":false,"Feather":false,"IntroDone":false}
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
