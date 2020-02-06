@@ -19,9 +19,11 @@ func isFinished() -> bool:
 onready var gVarsNode = get_node("/root/GlobalVars")
 onready var Gvars = gVarsNode.GlobalVars
 onready var sfxPlayer = get_node("/root/SoundPlayer")
+onready var musicPlayer = get_node("/root/MusicPlayer")
 
 func _ready(): 
 	sfxPlayer.pause_mode = Node.PAUSE_MODE_PROCESS
+	musicPlayer.pause_mode = Node.PAUSE_MODE_PROCESS
 
 func start(dialogue_dict):
 	"""
