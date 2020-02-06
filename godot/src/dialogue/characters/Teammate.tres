@@ -5,8 +5,8 @@
 
 [resource]
 script = ExtResource( 2 )
-display_name = ""
-backstory = "Sigurd's thinking lines"
+display_name = "Teammate"
+backstory = "Sigurd's teammate"
 expressions = {
 "neutral": ExtResource( 1 )
 }

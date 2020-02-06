@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://src/map/LocalMap.gd" type="Script" id=1]
 [ext_resource path="res://assets/sprites/local_map/tilesets/cave-dark.png" type="Texture" id=2]
@@ -31,7 +31,11 @@
 [ext_resource path="res://src/map/pawns/actions/DialogueAction.gd" type="Script" id=29]
 [ext_resource path="res://addons/Custom Actions/TileUpdateAction.gd" type="Script" id=30]
 [ext_resource path="res://assets/sprites/cave_floor.png" type="Texture" id=31]
-[ext_resource path="res://src/interface/gui/DialogueBox.tscn" type="PackedScene" id=32]
+[ext_resource path="res://src/map/Area2D.gd" type="Script" id=32]
+[ext_resource path="res://assets/sprites/custom_jo_art/menu_back.png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/custom_jo_art/menu_quit_text.png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/custom_jo_art/Congratulations.png" type="Texture" id=35]
+[ext_resource path="res://src/interface/gui/DialogueBox.tscn" type="PackedScene" id=36]
 
 [sub_resource type="TileSet" id=1]
 0/name = "cave.png 0g"
@@ -409,6 +413,9 @@ extents = Vector2( 30, 30 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 80, 80 )
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 450, 120 )
+
 [node name="LocalMap" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -531,6 +538,7 @@ texture = ExtResource( 23 )
 shape = SubResource( 2 )
 
 [node name="Dialogue02" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
+editor/display_folded = true
 position = Vector2( 1473.86, 1476.91 )
 script = ExtResource( 20 )
 type = 5
@@ -580,24 +588,9 @@ facing = {
 "up": true
 }
 
-[node name="Up" type="RayCast2D" parent="GameBoard/Pawns/Dialogue03/Raycasts" index="0"]
-cast_to = Vector2( 0, -50 )
-collision_mask = 2
-
-[node name="Down" type="RayCast2D" parent="GameBoard/Pawns/Dialogue03/Raycasts" index="1"]
-collision_mask = 2
-
-[node name="Left" type="RayCast2D" parent="GameBoard/Pawns/Dialogue03/Raycasts" index="2"]
-cast_to = Vector2( -50, 0 )
-collision_mask = 2
-
-[node name="Right" type="RayCast2D" parent="GameBoard/Pawns/Dialogue03/Raycasts" index="3"]
-cast_to = Vector2( 50, 0 )
-collision_mask = 2
-
 [node name="Dialogue" parent="GameBoard/Pawns/Dialogue03/Actions" index="0" instance=ExtResource( 21 )]
 script = ExtResource( 22 )
-dialogue_file_path = "res://src/dialogue/data/null_conversation.json"
+dialogue_file_path = "res://src/dialogue/data/preetee_dialogue.json"
 
 [node name="DialogueBalloon" type="Sprite" parent="GameBoard/Pawns/Dialogue03"]
 visible = false
@@ -608,6 +601,7 @@ texture = ExtResource( 23 )
 shape = SubResource( 2 )
 
 [node name="Dialogue04" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
+editor/display_folded = true
 position = Vector2( 119.402, 440.857 )
 script = ExtResource( 20 )
 type = 5
@@ -625,7 +619,28 @@ visible = false
 script = ExtResource( 22 )
 dialogue_file_path = "res://src/dialogue/data/tasklist_dialogue.json"
 
+[node name="Dialogue05" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
+editor/display_folded = true
+visible = false
+position = Vector2( 1640.85, -121.453 )
+script = ExtResource( 20 )
+type = 5
+facing = {
+"down": true,
+"left": true,
+"right": true,
+"up": true
+}
+
+[node name="CollisionShape2D" parent="GameBoard/Pawns/Dialogue05" index="3"]
+visible = false
+
+[node name="DialogueAction" type="Node" parent="GameBoard/Pawns/Dialogue05/Actions" index="0"]
+script = ExtResource( 22 )
+dialogue_file_path = "res://src/dialogue/data/arrive_at_ruins.json"
+
 [node name="DialoguePawn" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
+editor/display_folded = true
 position = Vector2( 37.1023, 519.592 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
@@ -760,7 +775,7 @@ dialogue_file_path = "res://src/dialogue/data/door03.json"
 
 [node name="DoorFinal" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
-position = Vector2( 1560.76, -206.167 )
+position = Vector2( 1560.76, -198.134 )
 rotation = 4.71239
 script = ExtResource( 28 )
 facing = {
@@ -772,6 +787,7 @@ facing = {
 
 [node name="DialogueAction" type="Node" parent="GameBoard/Pawns/DoorFinal/Actions" index="0"]
 script = ExtResource( 29 )
+dialogue_file_path = "res://src/dialogue/data/door-final.json"
 
 [node name="Sparkle01" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
 editor/display_folded = true
@@ -798,6 +814,7 @@ AUTO_START_INTERACTION = true
 script = ExtResource( 30 )
 
 [node name="Sparkle03" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
+editor/display_folded = true
 position = Vector2( 45.4983, -123.061 )
 vanish_on_interaction = true
 AUTO_START_INTERACTION = true
@@ -876,14 +893,39 @@ facing = {
 script = ExtResource( 30 )
 
 [node name="Empty_Floor_Coverup" type="Sprite" parent="GameBoard"]
-position = Vector2( 119.495, 432.602 )
+position = Vector2( 122.708, 439.028 )
 texture = ExtResource( 31 )
+
+[node name="EndObjects" type="Area2D" parent="GameBoard"]
+visible = false
+position = Vector2( 881.582, 597.986 )
+script = ExtResource( 32 )
+
+[node name="QuitMenu" type="Sprite" parent="GameBoard/EndObjects"]
+texture = ExtResource( 33 )
+
+[node name="QuitMenu_QuitText" type="Sprite" parent="GameBoard/EndObjects"]
+position = Vector2( 602.74, -899.743 )
+texture = ExtResource( 34 )
+
+[node name="WinScreen" type="Sprite" parent="GameBoard/EndObjects"]
+visible = false
+position = Vector2( 610.448, -695.242 )
+texture = ExtResource( 35 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameBoard/EndObjects"]
+position = Vector2( 599.829, -897.198 )
+shape = SubResource( 4 )
+
+[node name="WinDialogue" type="Node" parent="GameBoard/EndObjects"]
+script = ExtResource( 22 )
+dialogue_file_path = "res://src/dialogue/data/win_game.json"
 
 [node name="MapInterface" type="CanvasLayer" parent="."]
 pause_mode = 2
 layer = 100
 
-[node name="DialogueBox" parent="MapInterface" instance=ExtResource( 32 )]
+[node name="DialogueBox" parent="MapInterface" instance=ExtResource( 36 )]
 visible = false
 
 [editable path="GameBoard/Pawns/Dialogue01"]
@@ -893,6 +935,8 @@ visible = false
 [editable path="GameBoard/Pawns/Dialogue03"]
 
 [editable path="GameBoard/Pawns/Dialogue04"]
+
+[editable path="GameBoard/Pawns/Dialogue05"]
 
 [editable path="GameBoard/Pawns/DialoguePawn"]
 

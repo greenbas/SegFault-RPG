@@ -346,7 +346,7 @@ _global_script_class_icons={
 
 config/name="SegFault RPG"
 run/main_scene="res://src/main/Game.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/sprites/custom_jo_art/glitch-icon.png"
 config/version="0.3.0"
 
 [autoload]

@@ -1,0 +1,110 @@
+{
+    "0": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    },
+    "1": {
+        "type": "itemcheck",
+        "name": "Dialogue03",
+        "expression": 19,
+        "text": "2"
+    },
+    "2": {
+        "type": "itemcheck",
+        "name": "Sparkle01",
+        "expression": 11,
+        "text": "3"
+    },
+  "3": {
+    "name": "Preeteebutu",
+    "expression": "neutral",
+    "text": "Oh, noooooooo..."
+  },
+  "4": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "A broken image?"
+  },
+  "5": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(Whose fault was that?)"
+  },
+  "6": {
+    "name": "Preeteebutu",
+    "expression": "neutral",
+    "text": "Broken indeed! I've fallen under a monstrous curse!"
+  },
+  "7": {
+    "name": "Preeteebutu",
+    "expression": "neutral",
+    "text": "I am the magnificent Preeteebutu... but my appearance has vanished entirely! Please, if you can find a way to return my plume, that will break my curse!"
+  },
+  "8": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(Guess I gotta find those image files.)"
+  },
+    "9": {
+        "type": "jump",
+        "name": 21,
+        "expression": "",
+        "text": ""
+    },
+  "10": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "Preeteebutu, this might help you."
+  },
+  "11": {
+    "name": "Preeteebutu",
+    "expression": "neutral",
+    "text": "Oh?"
+  },
+  "12": {
+    "name": "Preeteebutu",
+    "expression": "neutral",
+    "text": "It's a miracle! My beautiful feathers! My magnificent tail!"
+  },
+  "13": {
+    "name": "Preeteebutu",
+    "expression": "neutral",
+    "text": "My beauty is restored! Thank you so much!"
+  },
+  "14": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "Yeah, you're definitely... beautiful, all right."
+  },
+  "15": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(I'm not gonna tell him.)"
+  },
+	"16": {
+		"type":"raise",
+		"name":"Dialogue03"
+    },
+    "17": {
+        "type": "jump",
+        "name": 21,
+        "expression": "",
+        "text": ""
+    },
+  "18": {
+    "name": "Preeteebutu",
+    "expression": "neutral",
+    "text": "Thank you again! My beauty smiles upon the world once more!"
+  },
+  "19": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "Well, I'm glad you're smiling?"
+  },
+  "20": {
+    "name": "...",
+    "expression": "neutral",
+    "text": "..."
+  }
+}

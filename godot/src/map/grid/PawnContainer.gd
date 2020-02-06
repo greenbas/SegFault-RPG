@@ -43,3 +43,8 @@ func rebuild_party() -> void:
 		member.queue_free()
 	party_members.clear()
 	spawn_party(party, Leader_pos)
+
+func despawn_all() -> void:
+	for member in party_members:
+		member.queue_free()
+	party_members.clear()

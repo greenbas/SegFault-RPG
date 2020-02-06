@@ -6,8 +6,7 @@
 [resource]
 script = ExtResource( 2 )
 display_name = "..."
-backstory = "Godette is an adventurous, if not a reckless young girl. She's curious about anything and everything.
-"
+backstory = "The nothing lines, so we can jump to them.  At some point, we won't be displaying them to the player at all."
 expressions = {
 "neutral": ExtResource( 1 )
 }

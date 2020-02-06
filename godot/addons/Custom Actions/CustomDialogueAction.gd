@@ -36,13 +36,18 @@ func interact() -> void:
 		if GlobalVars.GlobalVars.Sparkle01 == true:
 			GlobalVars.GlobalVars.Dialogue03 = true
 			local_map.give_feather()
-	if name == "Dialogue04": # Heliotile / Sundog
+	if name == "Dialogue04": # Heliotiet / Sundog
 		# Don't let this trigger before the light's on
 		if GlobalVars.GlobalVars.Sparkle03 and GlobalVars.GlobalVars.Dialogue04 == false:
 			GlobalVars.GlobalVars.Dialogue04 = true
 			local_map.quests_received() # First time only
+	if name == "Dialogue05": # Ruins
+		#if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
+		local_map.open_menu()
 	if GlobalVars.GlobalVars.Seed and GlobalVars.GlobalVars.Voice and GlobalVars.GlobalVars.Feather:
 		local_map.fix_runes()
+	if name == "GameBoard":
+		local_map.win_screen()
 	emit_signal("finished")
 
 func load_dialogue(file_path) -> Dictionary:

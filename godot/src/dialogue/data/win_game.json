@@ -1,0 +1,67 @@
+{
+  "1": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "Yes!"
+  },
+  "2": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(I'm back!)"
+  },
+  "3": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(I look around. People are still giving their presentations.)"
+  },
+  "4": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(I don't think time passed at all.)"
+  },
+  "5": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(My teammates look over to me.)"
+  },
+  "6": {
+    "name": "Teammate",
+    "expression": "neutral",
+    "text": "What happened, Sig?"
+  },
+  "7": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "I logged out!"
+  },
+  "8": {
+    "name": "Teammate",
+    "expression": "neutral",
+    "text": "You got it to work?"
+  },
+  "9": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(I look at the screen in front of me, displaying our game. The menu appears, just as it was in those ruins I explored.)"
+  },
+  "10": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "You know what? I think I did."
+  },
+  "11": {
+    "name": "Teammate",
+    "expression": "neutral",
+    "text": "Let me see! Think we can present with this?"
+  },
+  "12": {
+    "name": "",
+    "expression": "neutral",
+    "text": "(I look up at the concluding presentation and hear the organizer calling our group name.)"
+  },
+  "13": {
+    "name": "Sigurd",
+    "expression": "neutral",
+    "text": "Definitely."
+  }
+}

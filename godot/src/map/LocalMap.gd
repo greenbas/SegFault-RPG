@@ -43,6 +43,7 @@ func init_dark():
 	$GameBoard/Pawns/Dialogue03.visible = false
 	$GameBoard/Pawns/Dialogue04.visible = false # This is broken, replaced by the action of Empty_Floor_Coverup sprite
 	$GameBoard/Pawns/DialoguePawn.visible = false
+	$GameBoard/Pawns/Dialogue05.visible = false # Ruins
 	$GameBoard/Pawns/Door01.visible = false
 	$GameBoard/Pawns/Door02.visible = false
 	$GameBoard/Pawns/Door03.visible = false
@@ -102,6 +103,16 @@ func fix_runes():
 	$GameBoard/RuinsSprite.visible = true
 	$GameBoard/RuinsDarkSprite.visible = false
 	$GameBoard.open_door("DoorFinal")
+	$GameBoard/Pawns/Dialogue05.visible = true
 
 func open_door(name):
 	grid.open_door(name)
+
+func open_menu():
+	$GameBoard/EndObjects.visible = true
+	#get_parent().party.visible = false
+
+func win_screen():
+	print("Win Screen")
+	$GameBoard/EndObjects/WinScreen.visible = true
+	$GameBoard/EndObjects/QuitMenu_QuitText.visible = false
