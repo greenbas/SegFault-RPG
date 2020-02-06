@@ -9,8 +9,12 @@ var title : String = ""
 var text : String = ""
 var expression : String
 
+
 var _conversation : Array
 var _index_current : int = 0
+
+func isFinished() -> bool:
+	return _index_current == (_conversation.size() - 1)
 
 onready var gVarsNode = get_node("/root/GlobalVars")
 onready var Gvars = gVarsNode.GlobalVars
@@ -24,7 +28,6 @@ func start(dialogue_dict):
 	Takes a dictionary of conversation data returned by Dialogue.load()
 	and stores it in an array
 	"""
-	print(Gvars['lorem'])
 	emit_signal("started")
 	_conversation = dialogue_dict.values()
 	_index_current = 0
@@ -60,7 +63,6 @@ func next():
 			var item = arg_1
 			Gvars[item] = true
 			_index_current
-			
 	assert(_index_current <= _conversation.size())
 	_update()
 
@@ -73,5 +75,5 @@ func _update():
 		text = _conversation[_index_current].text
 		title = _conversation[_index_current].name
 		expression = _conversation[_index_current].expression
-	if _index_current == _conversation.size() - 1:
+	if isFinished():
 		emit_signal("finished")
