@@ -531,7 +531,6 @@ texture = ExtResource( 23 )
 shape = SubResource( 2 )
 
 [node name="Dialogue02" parent="GameBoard/Pawns" instance=ExtResource( 19 )]
-editor/display_folded = true
 position = Vector2( 1473.86, 1476.91 )
 script = ExtResource( 20 )
 type = 5
@@ -559,7 +558,7 @@ collision_mask = 2
 
 [node name="Dialogue" parent="GameBoard/Pawns/Dialogue02/Actions" index="0" instance=ExtResource( 21 )]
 script = ExtResource( 22 )
-dialogue_file_path = "res://src/dialogue/data/null_conversation.json"
+dialogue_file_path = "res://src/dialogue/data/forest_dialogue.json"
 
 [node name="DialogueBalloon" type="Sprite" parent="GameBoard/Pawns/Dialogue02"]
 visible = false

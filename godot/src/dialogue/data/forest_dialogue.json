@@ -1,0 +1,80 @@
+{
+    "0": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    },
+    "1": {
+        "type": "itemcheck",
+        "name": "Dialogue02",
+        "expression": 13,
+        "text": "2"
+    },
+    "2": {
+        "type": "itemcheck",
+        "name": "Sparkle07",
+        "expression": 7,
+        "text": "3"
+    },
+      "3": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "Cursed pit, huh?"
+      },
+      "4": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(It's a glitch area... Makes sense, considering how messed up our code turned out.)"
+      },
+      "5": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(I should just cover this up with something.)"
+  },
+    "6": {
+        "type": "jump",
+        "name": 15,
+        "expression": "",
+        "text": ""
+    },
+      "7": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "A magic seed that grows anywhere, huh? Let's try it."
+      },
+      "8": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(I toss the seed into the pit...)"
+      },
+      "9": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "And that is officially dummied out."
+      },
+      "10": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(Until some speedrunner shows up, anyway.)"
+      },
+	"11": {
+		"type":"raise",
+		"name":"Dialogue02"
+    },
+    "12": {
+        "type": "jump",
+        "name": 15,
+        "expression": "",
+        "text": ""
+    },
+    "13": {
+        "name": "",
+        "expression": "neutral",
+        "text": "(I fixed the glitch.)"
+    },
+    "14": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    }
+}
