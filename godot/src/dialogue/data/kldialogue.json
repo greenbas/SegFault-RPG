@@ -43,7 +43,7 @@
     },
     "8": {
         "type": "jump",
-        "name": 18,
+        "name": 22,
         "expression": "",
         "text": ""
     },
@@ -83,16 +83,31 @@
     },
     "16": {
         "type": "jump",
-        "name": 18,
+        "name": 22,
         "expression": "",
         "text": ""
     },
     "17": {
         "name": "Ko Leido",
         "expression": "neutral",
-        "text": "Thank you so much!"
+        "text": "Thank you again for returning my voice."
     },
     "18": {
+        "name": "Ko Leido",
+        "expression": "neutral",
+        "text": "I appreciate it more than you know."
+    },
+    "19": {
+        "name": "Sigurd",
+        "expression": "neutral",
+        "text": "I think I know."
+    },
+    "20": {
+        "name": "...",
+        "expression": "neutral",
+        "text": "..."
+    },
+    "21": {
         "name": "...",
         "expression": "neutral",
         "text": "..."

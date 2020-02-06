@@ -11,6 +11,7 @@ func play_glitchbgm():
 	play()
 
 func play_fixedbgm():
+	stop()
 	stream = fixedbgm
 	play()
 

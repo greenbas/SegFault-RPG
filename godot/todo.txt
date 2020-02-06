@@ -1,21 +1,13 @@
-2	Finish Dialogue
-4	Skip ... dialogue
-5	Playtest doors & keys
-2	"Quit Game" menu
-5	Intro screen
-4	Intro text more clear?
-4	Interact on Mouse
+
 3	Make non-key sparkles invisible until you talk to the correct person
-3	Glitched music
+4	Skip ... dialogue
+4	Interact on Mouse
+5	Doors & keys
+5	Intro screen
 
 
 Art:
 - Different images for Dialogue points
 - Menu
 - Preeteebutu broken for dialogue
-
-
-
-I just realized we already know how to do scene transitions, I'm doing it with the dark version of the cave.  I'm going to make sure I get the final screen working
-
 

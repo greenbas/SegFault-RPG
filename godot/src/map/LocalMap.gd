@@ -32,6 +32,7 @@ func update_tile(n):
 	
 func init_dark():
 	print("Initiate the darkness")
+	$"/root/MusicPlayer".play_glitchbgm()
 	$GameBoard/Pawns/Sparkle01.visible = false
 	$GameBoard/Pawns/Sparkle02.visible = false
 	$GameBoard/Pawns/Sparkle04.visible = false
