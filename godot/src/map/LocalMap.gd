@@ -41,7 +41,7 @@ func init_dark():
 	$GameBoard/Pawns/Dialogue01.visible = false
 	$GameBoard/Pawns/Dialogue02.visible = false
 	$GameBoard/Pawns/Dialogue03.visible = false
-	$GameBoard/Pawns/Dialogue04.visible = false
+	$GameBoard/Pawns/Dialogue04.visible = false # This is broken, replaced by the action of Empty_Floor_Coverup sprite
 	$GameBoard/Pawns/DialoguePawn.visible = false
 	$GameBoard/Pawns/Door01.visible = false
 	$GameBoard/Pawns/Door02.visible = false
@@ -59,10 +59,16 @@ func enable_the_light():
 	$GameBoard/SunSprite.visible = true
 	$GameBoard/SundogSprite.visible = true
 	$GameBoard/RuinsSprite.visible = true
-	$GameBoard/Pawns/Dialogue04.visible = true
+	#$GameBoard/Pawns/Dialogue04.visible = true
+	$GameBoard/Empty_Floor_Coverup.visible = false
+	$GameBoard.open_door("Door01")
+	$GameBoard.open_door("Door02")
+	$GameBoard.open_door("Door03")
+	$GameBoard.open_door("DoorFinal")
 
 func quests_received():
 	print("Quests received")
+	
 	$GameBoard/Pawns/Dialogue01.visible = true
 	$GameBoard/Pawns/Dialogue02.visible = true
 	$GameBoard/Pawns/Dialogue03.visible = true

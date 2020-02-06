@@ -114,3 +114,6 @@ func start_interaction() -> void:
 	if vanish_on_interaction:
 		queue_free()
 	get_tree().paused = false
+
+func open_me():
+	queue_free()

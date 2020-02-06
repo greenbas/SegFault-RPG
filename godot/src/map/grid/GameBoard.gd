@@ -73,12 +73,15 @@ func update_tile(name):
 	
 func open_door(name):
 	hide_pawn(name)
-	#for pawn in pawns.get_children():
-	#	if pawn.name == name:
-	#		pawn.visible = false
-	#		
+	delete_pawn(name)
 
 func hide_pawn(name):
 	for pawn in pawns.get_children():
 		if pawn.name == name:
 			pawn.visible = false
+			
+func delete_pawn(name):
+	for pawn in pawns.get_children():
+		if name.begins_with("Door") and pawn.name == name:
+			print("Opening %s" % name)
+			pawn.open_me()

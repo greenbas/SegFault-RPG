@@ -69,7 +69,7 @@ func _update():
 	if _conversation[_index_current].has("sfx") == true:
 		var sfxID = _conversation[_index_current].sfx
 		sfxPlayer.diaMCspeech()
-	if not _conversation[_index_current].has("type"):
+	if not _conversation[_index_current].has("type"): # and _conversation[_index_current].text != "...":
 		text = _conversation[_index_current].text
 		title = _conversation[_index_current].name
 		expression = _conversation[_index_current].expression

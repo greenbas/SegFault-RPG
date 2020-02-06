@@ -7,6 +7,7 @@ signal dialogue_loaded(data)
 func interact() -> void:
 	var dialogue : Dictionary =  load_dialogue(dialogue_file_path)
 	yield(local_map.play_dialogue(dialogue), "completed")
+	#local_map.play_dialogue(dialogue)
 	emit_signal("finished")
 
 func load_dialogue(file_path) -> Dictionary:
